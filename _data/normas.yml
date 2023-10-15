@@ -6,6 +6,11 @@
     - Si guardia lo recibe sucio, será infraccionado con multa.
     - Cuidar el mobiliario, es su responsabilidad.
     - Su uso es exclusivo de residente con sus gastos comunes al día, en ningún caso propietarios que no vivan aquí.
+    - Uso solo para residentes con sus gastos comunes al día.En ningún caso propietarios que no vivan aquí.
+    - Uso solo para residentes, visitas maximo 5 personas, quincho no es para eventos.
+    - El uso de música a volumen bajo, acorde al reglamento interno, no perturbando el descanso de los residentes, de lo contrario serán notificados.
+    - El Quincho es un espacio común y se aplican todas las normas y reglas internas del condominio.
+    - Prohibido fumar marihuana,
 - nombre: Bicicleta
   icon: "fa-solid fa-bicycle"
   link: /normas/bicicletas/
@@ -13,3 +18,5 @@
       - Pasar cadena por marco y rueda
 - nombre: Estacionamientos
   icon: "fa-solid fa-car"
+- nombre: Piscina
+  icon: "fa-solid fa-person-swimming"

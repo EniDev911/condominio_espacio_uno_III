@@ -9,8 +9,10 @@
   </head>
   <body>
   	{% include navigation.html %}
-  	{% include banner.html %}
-  	<div class="container py-3">
+    {% if page.banner %}
+  	 {% include banner.html %}
+    {% endif %}
+  	<div class="py-3 content">
     {{ content }}
   	</div>
   	{% include footer.html %}

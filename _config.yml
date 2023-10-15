@@ -1,3 +1,3 @@
-url: enidev911.github.io # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: /condominio_espacio_uno_III # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+encoding: UTF-8
+url: "enidev911.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/condominio_espacio_uno_III" # the subpath of your site, e.g. /blog
