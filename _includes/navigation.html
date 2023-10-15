@@ -16,7 +16,7 @@
           {% for item in site.data.navegacion %}
           <li class="nav-item">
             <a aria-current="page"
-                href="{{ item.link }}"
+                href="{{ item.link | relative_url }}"
                 {% if page.url == item.link %}
                  class="nav-link active"
                  {% else %}
