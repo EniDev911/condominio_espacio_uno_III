@@ -1,0 +1,15 @@
+- nombre: Quincho
+  icon: "fa-solid fa-house-chimney"
+  link: /normas/quincho/
+  lista:
+    - Dejar limpio y ordenado, lleva tú basura a la sala de entrada del condominio.
+    - Si guardia lo recibe sucio, será infraccionado con multa.
+    - Cuidar el mobiliario, es su responsabilidad.
+    - Su uso es exclusivo de residente con sus gastos comunes al día, en ningún caso propietarios que no vivan aquí.
+- nombre: Bicicleta
+  icon: "fa-solid fa-bicycle"
+  link: /normas/bicicletas/
+  lista:
+      - Pasar cadena por marco y rueda
+- nombre: Estacionamientos
+  icon: "fa-solid fa-car"
