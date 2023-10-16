@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Normas Quincho"
+subtitle: "El Quincho es un espacio común y se aplican todas las normas internas de convivencia y reglamentos del condominio"
 banner: true
 ---
 
@@ -10,11 +11,29 @@ banner: true
 }
 
 .card-img-top:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 </style>
 
+<h3 align="center" class="bg-dark bg-gradient text-light py-1 rounded">Horarios disponibles</h3><br>
+<!-- BLOQUE HORARIOS -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    {% for item in site.data.normas[0].bloques %}
+      <li class="nav-item fw-bold" role="presentation">
+        <button class="nav-link {% if item.active %}active{% endif %}" id="{{ item.bloque }}" data-bs-toggle="tab" data-bs-target="#{{ item.bloque }}_pane" type="button" role="tab" aria-controls="{{ item.bloque }}" aria-selected="true">{{ item.nombre | upcase }}</button>
+       </li>
+    {% endfor %}
+</ul>
+<div class="tab-content mt-3" id="myTabContent">
+    {% for item in site.data.normas[0].bloques %}
+      <div class="tab-pane fade fs-5 fw-bold {% if item.active %}show active{% endif %}" id="{{ item.bloque }}_pane" role="tabpanel" aria-labelledby="{{ item.bloque }}_pane" tabindex="0">&#x23f2; {{ item.horario | upcase }}</div>
+    {% endfor %}
+</div>
+
+---
+
+<h3 align="center" class="bg-dark bg-gradient text-light py-1 rounded">Normas de uso</h3>
 
 <ul class="list-group list-group-flush py-3">
 	{% for item in site.data.normas[0].lista %}
@@ -22,48 +41,32 @@ banner: true
 	{% endfor %}
 </ul>
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">BLOQUE 1</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">BLOQUE 2</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">BLOQUE 3</button>
-  </li>
-</ul>
-<div class="tab-content mt-3" id="myTabContent">
-  <div class="tab-pane fade show active fs-5 fw-bold" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">&#x23f2; 9:00 A 12:00 HORAS</div>
-  <div class="tab-pane fade fs-5 fw-bold" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">&#x23f2; 13:00 A 16:00 HORAS</div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-</div>
+
 
 <!-- SECTION: DESTACADOS -->
-<section class="pt-2 container">
+<section>
     <h2 class="text-center text-uppercase my-3">Conoce nuestro quincho</h2>
     <hr class="text-secondary mb-4">
     <div class="row mt-4">
         <!-- COL: 1 > CARD : 1 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-3 mb-3 mb-xl-0 mx-auto">
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
             <div class="card">
-                <img src="{{ '/assets/quincho/01.jpg' | relative_url }}" class="card-img-top" alt="card imagen 1"
-                    data-bs-toggle="tooltip" title="quincho parrilla" data-bs-placement="bottom" height="190">
+                <img src="{{ '/assets/quincho/01.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
             </div>
         </div>
         <!-- COL: 1 > CARD : 1 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-3 mb-3 mb-xl-0 mx-auto">
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
             <div class="card">
-                <img src="{{ '/assets/quincho/02.jpg' | relative_url }}" class="card-img-top" alt="card imagen 2"
-                    data-bs-toggle="tooltip" title="quincho parrilla" data-bs-placement="bottom" height="190">
+                <img src="{{ '/assets/quincho/02.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
             </div>
         </div>
         <!-- COL: 3 > CARD : 3 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-3 mb-3 mb-xl-0 mx-auto">
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
             <div class="card">
-                <img src="{{ '/assets/quincho/03.jpg' | relative_url }}" class="card-img-top" alt="card imagen 2"
-                    data-bs-toggle="tooltip" title="quincho parrilla" data-bs-placement="bottom" height="190">
+                <img src="{{ '/assets/quincho/03.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
             </div>
         </div>
     </div>

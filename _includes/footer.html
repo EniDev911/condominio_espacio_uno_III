@@ -41,7 +41,7 @@
             Recomendaciones
           </h6>
           <p>
-            <a href="#!" class="text-decoration-none">Escribenos</a>
+            <a href="mailto:comite.espaciouno@gmail.com?subject=Sugerencia y recomendación" target="_blank" class="text-decoration-none">Escribenos</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -54,7 +54,7 @@
           </h6>
           {% for item in site.data.footer.links %}
  		    <p>
-            <a href="{{ item.link }}" class="text-decoration-none">{{ item.nombre }}</a>
+            <a href="{{ item.link | relative_url }}" class="text-decoration-none">{{ item.nombre }}</a>
           </p>
           {% endfor %}
         </div>

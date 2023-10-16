@@ -10,7 +10,18 @@
     - Uso solo para residentes, visitas maximo 5 personas, quincho no es para eventos.
     - El uso de música a volumen bajo, acorde al reglamento interno, no perturbando el descanso de los residentes, de lo contrario serán notificados.
     - El Quincho es un espacio común y se aplican todas las normas y reglas internas del condominio.
-    - Prohibido fumar marihuana,
+    - Prohibido fumar marihuana.
+  bloques:
+    - bloque: "bloque_1"
+      horario: "9:00 A 12:00 HORAS"
+      nombre: "Bloque 1"
+      active: true
+    - bloque: "bloque_2"
+      horario: "13:00 A 16:00 HORAS"
+      nombre: "Bloque 2"
+    - bloque: "bloque_3"
+      horario: "17:00 A 20:00 HORAS"
+      nombre: "Bloque 3"
 - nombre: Bicicleta
   icon: "fa-solid fa-bicycle"
   link: /normas/bicicletas/

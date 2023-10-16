@@ -11,6 +11,8 @@
   	{% include navigation.html %}
     {% if page.banner %}
   	 {% include banner.html %}
+    {% else %}
+     {% include main_banner.html %}
     {% endif %}
   	<div class="py-3 content">
     {{ content }}
@@ -24,6 +26,25 @@
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+    </script>
+   <script type="text/javascript">
+      document.querySelectorAll("img[alt*='img']").forEach(element => {
+        element.style.cursor = "pointer";
+        element.addEventListener('click', () => {
+          let params  = 'width='+screen.width;
+           params += ', height='+screen.height;
+           params += ', top=0, left=0'
+           params += ', fullscreen=yes';
+           params += ', directories=no';
+           params += ', location=no';
+           params += ', menubar=no';
+           params += ', resizable=no';
+           params += ', scrollbars=no';
+           params += ', status=no';
+           params += ', toolbar=no';
+          const popup = window.open(element.src, '_blank', params)
+        })
+      })
     </script>
   </body>
 </html>
