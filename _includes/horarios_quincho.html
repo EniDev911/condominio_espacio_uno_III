@@ -1,0 +1,14 @@
+<h3 align="center" class="py-1 rounded text-uppercase fs-2" style="color: lightseagreen;">Horarios disponibles</h3>
+<!-- BLOQUE HORARIOS -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    {% for item in site.data.normas[0].bloques %}
+      <li class="nav-item fw-bold" role="presentation">
+        <button class="nav-link {% if item.active %}active{% endif %}" id="{{ item.bloque }}" data-bs-toggle="tab" data-bs-target="#{{ item.bloque }}_pane" type="button" role="tab" aria-controls="{{ item.bloque }}" aria-selected="true">{{ item.nombre | upcase }}</button>
+       </li>
+    {% endfor %}
+</ul>
+<div class="tab-content mt-3" id="myTabContent">
+    {% for item in site.data.normas[0].bloques %}
+      <div class="tab-pane fade fs-5 fw-bold {% if item.active %}show active{% endif %}" id="{{ item.bloque }}_pane" role="tabpanel" aria-labelledby="{{ item.bloque }}_pane" tabindex="0">&#x23f2; {{ item.horario | upcase }}</div>
+    {% endfor %}
+</div>

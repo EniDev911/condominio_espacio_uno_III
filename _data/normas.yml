@@ -31,3 +31,6 @@
   icon: "fa-solid fa-car"
 - nombre: Piscina
   icon: "fa-solid fa-person-swimming"
+- nombre: Música y ruidos
+  icon: "fa-solid fa-bullhorn"
+  link: /normas/ruidos-molestos

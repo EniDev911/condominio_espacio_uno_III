@@ -3,3 +3,6 @@ links:
     link: https://laserenaonline.cl/tag/denuncias/
   - nombre: "Normas"
     link: /normas/
+faq:
+  - name: "¿Cómo agendar un espacio común?"
+    link: /espacios-comunes/arriendo

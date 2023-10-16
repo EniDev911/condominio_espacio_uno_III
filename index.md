@@ -3,7 +3,6 @@ layout: default
 ---
 
 
-
 <h3 align="center">POLITICA DE CALIDAD DE VIDA Y CONVIVENCIA</h3>
 <br>
 

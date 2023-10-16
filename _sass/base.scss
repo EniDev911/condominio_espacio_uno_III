@@ -67,9 +67,9 @@ body {
     @media(hover: hover) {
     .hero-banner  {
         img {
-            transition: filter .3s ease;
+            // transition: filter .3s ease;
             &:hover {
-                filter: drop-shadow(2px 3px 12px #290);
+                // filter: drop-shadow(2px 3px 12px #290);
             }
         }
      }
