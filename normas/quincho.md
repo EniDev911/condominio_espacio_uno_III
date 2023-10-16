@@ -10,8 +10,10 @@ banner: true
 	transition: transform .5s ease;
 }
 
-.card-img-top:hover {
-	transform: scale(1.1);
+@media (hover: hover){
+    .card-img-top:hover {
+        transform: scale(1.1);
+    }
 }
 
 </style>
