@@ -5,13 +5,13 @@ banner: true
 bannerimg: /assets/ruidos-molestos.jpg
 ---
 
-### Ruidos molestos
-
-Los propietarios o arrendatarios de departamentos que orgaicen o realicen **actividades sociales**, **cualquiera** sea el horario deberán asegurarse de hacerlo a un volumen moderado que no molesta a los vecinos, evitando ruidos molestos, tales como gritos, carreras y/o saltos por las escaleras (**PROHIBIDO MULTA INMEDIATA**), especialmente durante la noche, en la que se puede alterar el descanso normal de los demás residentes. **Todos los ruidos que superar los 55 decibeles durante el día, 45 decibeles en horario de descanso. Por ejemplo la aspiradora llega a 70 decibeles, una moto a 100 y 110 decibeles)**
 
 
-<section>
-    <h2 class="text-center text-uppercase my-3">EJEMPLO RUIDOS MOLESTOS</h2>
+Los propietarios o arrendatarios de departamentos que orgaicen o realicen **actividades sociales**, **cualquiera** sea el horario deberán asegurarse de hacerlo a un volumen moderado que no molesta a los vecinos, evitando ruidos molestos, tales como gritos, carreras y/o saltos por las escaleras (**PROHIBIDO MULTA INMEDIATA**), especialmente durante la noche, en la que se puede alterar el descanso normal de los demás residentes. **Todos los ruidos que superar los 55 decibeles durante el día, 45 decibeles en horario de descanso.**
+
+
+<section class="py-2">
+   <h6 align="center" class="text-secondary my-3 ">EJEMPLO <div class="vr"></div> RUIDOS MOLESTOS</h6>
     <hr class="text-secondary mb-4">
     <div class="row mt-4">
         <!-- COL: 1 > CARD : 1 -->
@@ -53,8 +53,15 @@ Los propietarios o arrendatarios de departamentos que orgaicen o realicen **acti
     </div>
 </section>
 
----
 
+<div class="alert alert-danger mt-3 text-uppercase" role="alert">
+  &#x26a0; tú música no se debe escuchar afuera del departamento (<strong>NOTIFICACIÓN  <div class="vr"></div> MULTA</strong>)
+</div>
 
-<h2 class="text-center text-uppercase my-3">HORARIO DE REPARACIONES</h2>
-<hr class="text-secondary mb-4">
+<div class="alert alert-danger mt-3 text-uppercase" role="alert">
+  &#x26a0; No arrastrar muebles, ni sillas, debe levantarlos, su piso, es el techo de los vecinos de abajo. (<strong>MULTA</strong>)
+</div>
+
+<div class="alert alert-danger mt-3 text-uppercase" role="alert">
+  &#x26a0; No saltar en departamentos, de igual modo con maquinaria de ejercicios. (<strong>MULTA</strong>)
+</div>
