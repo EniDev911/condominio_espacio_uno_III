@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Espacios comunes
+banner: true
+bannerimg: /assets/espacios_comunes.png
 links:
   - name: Quincho
     link: quincho

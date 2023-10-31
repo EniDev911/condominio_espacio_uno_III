@@ -1,0 +1,62 @@
+<style>
+  .card-img-top {
+    transition: transform .5s ease;
+ }
+
+ @media (hover: hover){
+    .card-img-top:hover {
+        transform: scale(1.1);
+      }
+ }
+.list-group-item:hover {
+    filter: sepia(60%);
+}
+</style>
+<section>
+    <h2 class="text-center text-uppercase my-3" style="color: lightseagreen;">Conoce nuestra piscina</h2>
+    <hr class="text-secondary mb-4">
+    <div class="row mt-4 g-3">
+        <!-- COL: 1 > CARD : 1 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0">
+            <div class="card">
+                <img src="{{ '/assets/piscina/01.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+        <!-- COL: 1 > CARD : 1 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0">
+            <div class="card">
+                <img src="{{ '/assets/piscina/02.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+        <!-- COL: 3 > CARD : 3 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0">
+            <div class="card">
+                <img src="{{ '/assets/piscina/03.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+        <!-- COL: 4 > CARD : 4 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0">
+            <div class="card">
+                <img src="{{ '/assets/piscina/04.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+        <!-- COL: 5 > CARD : 5 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
+            <div class="card">
+                <img src="{{ '/assets/piscina/05.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+        <!-- COL: 6 > CARD : 6 -->
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
+            <div class="card">
+                <img src="{{ '/assets/piscina/06.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
+            </div>
+        </div>
+    </div>
+</section>

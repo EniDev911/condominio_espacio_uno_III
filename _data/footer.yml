@@ -1,8 +1,10 @@
 links:
   - nombre: "Denuncias La Serena"
     link: https://laserenaonline.cl/tag/denuncias/
+    target: "_blank"
   - nombre: "Normas"
     link: /normas/
+    target: "_self"
 faq:
   - name: "¿Cómo agendar un espacio común?"
     link: /espacios-comunes/arriendo

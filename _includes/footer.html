@@ -54,7 +54,7 @@
           </h6>
           {% for item in site.data.footer.links %}
  		    <p>
-            <a target='_blank' href="{{ item.link | relative_url }}" class="text-decoration-none">{{ item.nombre }}</a>
+            <a target='{{ item.target }}' href="{{ item.link | relative_url }}" class="text-decoration-none">{{ item.nombre }}</a>
           </p>
           {% endfor %}
         </div>

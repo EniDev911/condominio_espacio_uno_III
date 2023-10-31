@@ -17,7 +17,7 @@ libs:
 
 <fieldset>
 	<legend align="center"><h3 class="rounded text-uppercase fs-2" style="color: lightseagreen;">¿Cómo puedo reservar el Quincho?</h3></legend>
-<p class="fs-5">
+<p style="font-size: 18px">
 El uso del quincho está sujeto a disponibilidad, esta se asegura por medio de una reserva escrita en portería, y transferido y/o depositado el monto respectivo en la cuenta del condominio
 </p>	
 </fieldset>
