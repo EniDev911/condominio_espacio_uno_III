@@ -39,10 +39,10 @@
 </style>
 <div class="flex">
     <div class="group-btn-ifr">
-        <button class="ifr-btn" onclick="{document.getElementById('myframe').requestFullscreen()}"
+        <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}"
             style="display: block;">fullscreen</button>
         <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>
-        <button id="toolbar" class="ifr-btn">Ocultar toolbar</button>
+        <button id="toolbar" class="ifr-btn d-none d-lg-block">Ocultar toolbar</button>
     </div>
     <iframe id="myframe" name="myframe"
         src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0"

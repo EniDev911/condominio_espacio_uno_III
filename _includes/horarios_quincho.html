@@ -11,6 +11,9 @@
 	   box-shadow: 2px 3px 12px #00000030;
 	   margin: 15px 0;
 	}
+	.nav-link {
+		color: #107A89;
+	}
 </style>
 
 <fieldset>
@@ -27,7 +30,7 @@
 </ul>
 <div class="tab-content mt-3" id="myTabContent">
     {% for item in site.data.normas[0].bloques %}
-      <div class="tab-pane fade fs-5 fw-bold {% if item.active %}show active{% endif %}" id="{{ item.bloque }}_pane" role="tabpanel" aria-labelledby="{{ item.bloque }}_pane" tabindex="0">&#x23f2; {{ item.horario | upcase }}</div>
+      <div class="tab-pane fade fs-5 fw-bold {% if item.active %}show active{% endif %}" id="{{ item.bloque }}_pane" role="tabpanel" aria-labelledby="{{ item.bloque }}_pane" tabindex="0" style="text-decoration: underline 1px solid; color: #107A89"><i class="fa fa-clock"></i> {{ item.horario | upcase }}</div>
     {% endfor %}
 </div>
 </fieldset>

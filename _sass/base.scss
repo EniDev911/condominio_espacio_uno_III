@@ -48,6 +48,11 @@ body {
     transition: all 0.5s ease-in-out 0s;
 }
 
+h2 {
+    margin: 25px 0 !important;
+    color: #20B2AA !important;
+}
+
 .hero-banner .btn:hover:before {
     width: 100%;
 }
