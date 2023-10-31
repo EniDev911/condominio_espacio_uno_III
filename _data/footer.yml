@@ -5,6 +5,9 @@ links:
   - nombre: "Normas"
     link: /normas/
     target: "_self"
+  - nombre: Arrenar Quincho
+    link: /espacios-comunes/quincho
+    target: "_self"
 faq:
   - name: "¿Cómo agendar un espacio común?"
     link: /espacios-comunes/arriendo

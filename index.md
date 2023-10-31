@@ -3,12 +3,6 @@ layout: default
 title: "Inicio"
 ---
 
-<style type="text/css">
-	.font-karla {
-		font-family: 'Karla', sans-serif;
-		font-size: 19px;
-	}
-</style>
 
 <h3 align="center">POLITICA DE CALIDAD DE VIDA Y CONVIVENCIA</h3>
 <br>
