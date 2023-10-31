@@ -7,9 +7,9 @@ bannerimg: /assets/normas.png
 ---
 
 
-<div class="row g-3">
+<div class="row g-3 justify-content-center">
 	{% for item in site.data.normas %}
-	<div class="col-10 col-md-6 col-lg-4 mx-auto" onclick="window.location.href = '{{ item.link | relative_url }}'" style="cursor: pointer;">
+	<div class="col-10 col-md-6 col-lg-4" onclick="window.location.href = '{{ item.link | relative_url }}'" style="cursor: pointer;">
 		<div class="card">
 			<div class="card-header">
 				<div class="card-body">

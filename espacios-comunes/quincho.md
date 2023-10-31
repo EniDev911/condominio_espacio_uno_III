@@ -1,10 +1,31 @@
 ---
 layout: default
 title: Quincho
+subtitle: El **quincho** es un espacio común destinado para reuniones y actividades sociales
+banner: true
+bannerimg: /assets/quincho_b.jpg
+libs:
+  - '//cdn.jsdelivr.net/npm/sweetalert2@11'
 ---
+
+
+<style>
+	fieldset, legend {
+	   all: revert;
+	}
+</style>
+
+<fieldset>
+	<legend align="center"><h3 class="rounded text-uppercase fs-2" style="color: lightseagreen;">¿Cómo puedo reservar el Quincho?</h3></legend>
+<p class="fs-5">
+El uso del quincho está sujeto a disponibilidad, esta se asegura por medio de una reserva escrita en portería, y transferido y/o depositado el monto respectivo en la cuenta del condominio
+</p>	
+</fieldset>
+
 
 
 {% include horarios_quincho.html %}
 {% include pagos_arriendo_quincho.html %}
 
 {% include galeria_quincho.html %}
+
