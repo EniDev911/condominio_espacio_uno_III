@@ -1,0 +1,73 @@
+<style>
+    button.ifr-btn {
+            background: #f93939;
+            border: none;
+            padding: 7px 14px;
+            color: #fff;
+            cursor: pointer;
+        }
+    button.btn {
+            background: transparent;
+            border: none;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        button.btn img {
+            height: 100%;
+        }
+
+        .group-btn {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+            background: #323639;
+        }
+
+        .group-btn-ifr {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+            background: #323639;
+            border: 2px solid #323639;
+        }
+
+</style>
+<div class="flex">
+    <div class="group-btn-ifr">
+        <button class="ifr-btn" onclick="{document.getElementById('myframe').requestFullscreen()}"
+            style="display: block;">fullscreen</button>
+        <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>
+        <button id="toolbar" class="ifr-btn">Ocultar toolbar</button>
+    </div>
+    <iframe id="myframe" name="myframe"
+        src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0"
+        style="width:100%;height: 600px; overflow: hidden !important;" type="application/pdf" scrolling="no"
+        frameborder="0"></iframe>
+</div>
+
+<script>
+   const toolbar_btn = document.querySelector("#toolbar");
+        const open_blank = document.getElementById("open_blank");
+        const ifr = document.getElementById('myframe');
+
+        const attrToggle = (el, attr, expression) => el.getAttribute(attr).includes(expression)
+            ? el.setAttribute(attr, el.getAttribute(attr).replace(expression, ''))
+            : el.setAttribute(attr, el.getAttribute(attr) + expression);
+
+        toolbar_btn.addEventListener("click", () => {
+            attrToggle(ifr, "src", "&toolbar=0");
+            toolbar_btn.textContent.includes("Activar")
+                ? toolbar_btn.textContent = toolbar_btn.textContent.replace("Activar", "Ocultar")
+                : toolbar_btn.textContent = toolbar_btn.textContent.replace("Ocultar", "Activar")
+            window.frames[0].location.reload();
+        })
+
+        open_blank.addEventListener("click", () => {
+            window.open(ifr.src, '_blank', 'fullscreen=yes,menubar=no,location=no,scrollbars=no')
+        })
+</script>

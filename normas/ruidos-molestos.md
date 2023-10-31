@@ -65,3 +65,7 @@ Los propietarios o arrendatarios de departamentos que orgaicen o realicen <stron
 <div class="alert alert-danger mt-3 text-uppercase" role="alert">
   &#x26a0; No saltar en departamentos, de igual modo con maquinaria de ejercicios. (<strong>MULTA</strong>)
 </div>
+
+{% include visor_pdf.html
+	pdf='/assets/pdfs/ruidos_molestos.pdf'
+%}
