@@ -6,20 +6,6 @@ banner: true
 bannerimg: /assets/quincho_b.jp
 ---
 
-<style>
-.card-img-top {
-	transition: transform .5s ease;
-}
-
-@media (hover: hover){
-    .card-img-top:hover {
-        transform: scale(1.1);
-    }
-}
-.list-group-item:hover {
-	filter: sepia(60%);
-}
-</style>
 
 {% include horarios_quincho.html %}
 
