@@ -52,6 +52,17 @@
           const popup = window.open(element.src, '_blank', params)
         })
       })
+
+      function compartir(objeto) {
+        if (navigator.share){
+          navigator
+            .share(objeto)
+            .then(() => console.log("Successfully share"))
+            .catch(err => console.log("Error sharing", err))
+        } else{
+          console.log("No soportado")
+        }
+      }
     </script>
   </body>
 </html>
