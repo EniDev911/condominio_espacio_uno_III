@@ -44,9 +44,7 @@
     <div class="group-btn-ifr">
         <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}" style="display: block;">fullscreen</button>
         <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>
-        <button id="share"
-            class="ifr-btn d-lg-none"
-            onclick="share('{{ include.pdf | relative_url }}')">Compartir</button>
+        <button id="share" class="ifr-btn" onclick="share('{{ include.pdf | relative_url }}')">Compartir</button>
         <button id="toolbar" class="ifr-btn d-none d-lg-block">Ocultar toolbar</button>
     </div>
     <iframe id="myframe" name="myframe" src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0" style="width:100%;height: 600px; overflow: hidden !important;" type="application/pdf" scrolling="no" frameborder="0"></iframe>
@@ -72,15 +70,26 @@ open_blank.addEventListener("click", () => {
     window.open(ifr.src, '_blank', 'fullscreen=yes,menubar=no,location=no,scrollbars=no')
 })
 
+function openMailApplication(file) {
+    let params  = 'subject=Reglamento';
+        params += '&body=Se adjunta documento para descargar en la siguiente url:%0A👉 '+file;
+    window.location.href = 'mailto:email@example.com?'+params;
+    // alert('mailto:email@example.com?'+params)
+}
 
- const share = async (file) => {
-  const response = await fetch(file);
-  const buffer = await response.arrayBuffer();
 
-  const pdf = new File([buffer], "archivo.pdf", { type: "application/pdf" });
-  const files = [pdf];
+const share = async (file) => {
+    const response = await fetch(file);
+    const buffer = await response.arrayBuffer();
 
-  // Share PDF file if supported.
-  if (navigator.canShare({ files })) await navigator.share({ files });
+    const pdf = new File([buffer], "archivo.pdf", { type: "application/pdf" });
+    const files = [pdf];
+
+    // Share PDF file if supported.
+    if ("share" in navigator) {
+        await navigator.share({ files });
+    } else {
+        openMailApplication(file);
+    }
 };
 </script>
