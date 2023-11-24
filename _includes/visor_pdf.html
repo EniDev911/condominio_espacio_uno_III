@@ -74,7 +74,7 @@ open_blank.addEventListener("click", () => {
   const response = await fetch(file);
   const buffer = await response.arrayBuffer();
 
-  const pdf = new File([buffer], "", { type: "application/pdf" });
+  const pdf = new File([buffer], "archivo.pdf", { type: "application/pdf" });
   const files = [pdf];
 
   // Share PDF file if supported.
