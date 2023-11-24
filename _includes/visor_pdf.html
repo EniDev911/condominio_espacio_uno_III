@@ -39,36 +39,45 @@
 </style>
 <div class="flex">
     <div class="group-btn-ifr">
-        <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}"
-            style="display: block;">fullscreen</button>
+        <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}" style="display: block;">fullscreen</button>
         <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>
-        <button id="share" class="ifr-btn" onclick="compartir({title: 'Normas', text: 'Documento PDF', url: '//google.cl'})">Compartir</button>
+        <button id="share"
+            class="ifr-btn d-lg-none"
+            onclick="share('{{ include.pdf | relative_url }}')">Compartir</button>
         <button id="toolbar" class="ifr-btn d-none d-lg-block">Ocultar toolbar</button>
     </div>
-    <iframe id="myframe" name="myframe"
-        src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0"
-        style="width:100%;height: 600px; overflow: hidden !important;" type="application/pdf" scrolling="no"
-        frameborder="0"></iframe>
+    <iframe id="myframe" name="myframe" src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0" style="width:100%;height: 600px; overflow: hidden !important;" type="application/pdf" scrolling="no" frameborder="0"></iframe>
 </div>
-
 <script>
-   const toolbar_btn = document.querySelector("#toolbar");
-        const open_blank = document.getElementById("open_blank");
-        const ifr = document.getElementById('myframe');
+const toolbar_btn = document.querySelector("#toolbar");
+const open_blank = document.getElementById("open_blank");
+const ifr = document.getElementById('myframe');
 
-        const attrToggle = (el, attr, expression) => el.getAttribute(attr).includes(expression)
-            ? el.setAttribute(attr, el.getAttribute(attr).replace(expression, ''))
-            : el.setAttribute(attr, el.getAttribute(attr) + expression);
+const attrToggle = (el, attr, expression) => el.getAttribute(attr).includes(expression) ?
+    el.setAttribute(attr, el.getAttribute(attr).replace(expression, '')) :
+    el.setAttribute(attr, el.getAttribute(attr) + expression);
 
-        toolbar_btn.addEventListener("click", () => {
-            attrToggle(ifr, "src", "&toolbar=0");
-            toolbar_btn.textContent.includes("Activar")
-                ? toolbar_btn.textContent = toolbar_btn.textContent.replace("Activar", "Ocultar")
-                : toolbar_btn.textContent = toolbar_btn.textContent.replace("Ocultar", "Activar")
-            window.frames[0].location.reload();
-        })
+toolbar_btn.addEventListener("click", () => {
+    attrToggle(ifr, "src", "&toolbar=0");
+    toolbar_btn.textContent.includes("Activar") ?
+        toolbar_btn.textContent = toolbar_btn.textContent.replace("Activar", "Ocultar") :
+        toolbar_btn.textContent = toolbar_btn.textContent.replace("Ocultar", "Activar")
+    window.frames[0].location.reload();
+})
 
-        open_blank.addEventListener("click", () => {
-            window.open(ifr.src, '_blank', 'fullscreen=yes,menubar=no,location=no,scrollbars=no')
-        })
+open_blank.addEventListener("click", () => {
+    window.open(ifr.src, '_blank', 'fullscreen=yes,menubar=no,location=no,scrollbars=no')
+})
+
+
+ const share = async (file) => {
+  const response = await fetch(file);
+  const buffer = await response.arrayBuffer();
+
+  const pdf = new File([buffer], "", { type: "application/pdf" });
+  const files = [pdf];
+
+  // Share PDF file if supported.
+  if (navigator.canShare({ files })) await navigator.share({ files });
+};
 </script>

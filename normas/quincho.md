@@ -7,7 +7,11 @@ bannerimg: /assets/quincho_b.jpg
 ---
 
 
-<h3 align="center" class="bg-warning bg-gradient py-1 text-uppercase shadow">Normas de uso</h3>
+<h3 align="center" class="display-4 text-uppercase">Normas de uso</h3>
+
+{% include visor_pdf.html
+	pdf='/assets/pdfs/uso_quincho.pdf'
+%}
 
 <ul class="list-group list-group-flush py-3">
 	{% for item in site.data.normas[0].lista %}
