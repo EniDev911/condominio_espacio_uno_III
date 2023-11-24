@@ -13,11 +13,11 @@ bannerimg: /assets/quincho_b.jpg
 	pdf='/assets/pdfs/uso_quincho.pdf'
 %}
 
-<ul class="list-group list-group-flush py-3">
+<!-- <ul class="list-group list-group-flush py-3">
 	{% for item in site.data.normas[0].lista %}
 		<li class="list-group-item list-group-item-warning mb-1 shadow">&#x1F4CD; {{ item | upcase }}</li>
 	{% endfor %}
-</ul>
+</ul> -->
 
 {% include horarios_quincho.html %}
 
