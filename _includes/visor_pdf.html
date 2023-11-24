@@ -72,7 +72,7 @@ open_blank.addEventListener("click", () => {
 
 function openMailApplication(file) {
     let params  = 'subject=Reglamento';
-        params += '&body=Se adjunta documento para descargar en la siguiente url:%0A👉 '+file;
+        params += '&body=Se adjunta documento para su visualización en la siguiente url:%0A👉 {{site.url}}'+file;
     window.location.href = 'mailto:email@example.com?'+params;
     // alert('mailto:email@example.com?'+params)
 }
