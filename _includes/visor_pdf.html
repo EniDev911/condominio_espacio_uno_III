@@ -82,7 +82,7 @@ const share = async (file) => {
     const response = await fetch(file);
     const buffer = await response.arrayBuffer();
 
-    const pdf = new File([buffer], "archivo.pdf", { type: "application/pdf" });
+    const pdf = new File([buffer], file.split('/')[4], { type: "application/pdf" });
     const files = [pdf];
 
     // Share PDF file if supported.
