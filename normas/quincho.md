@@ -7,7 +7,7 @@ bannerimg: /assets/quincho_b.jpg
 ---
 
 
-<h3 align="center" class="display-4 text-uppercase">Normas de uso</h3>
+<h3 align="center" class="display-5 text-uppercase">Normas de uso</h3>
 
 {% include visor_pdf.html
 	pdf='/assets/pdfs/uso_quincho.pdf'
