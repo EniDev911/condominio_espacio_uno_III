@@ -24,7 +24,7 @@
       nombre: "Bloque 3"
 - nombre: Bicicleta
   icon: "fa-solid fa-bicycle"
-  link: /normas/bicicletas/
+  link: /normas/bicicletas
   lista:
       - Pasar cadena por marco y rueda
 - nombre: Estacionamientos
@@ -38,6 +38,6 @@
     - Prohibido el ingreso de mascotas.
     - Los niños deben ser supervisado en todo momento por sus padres.
     - "Prohibido la practica de actividades riesgosas o molestas en la piscina (Ej: salpicar agua)"
-- nombre: Música y ruidos
+- nombre: Ruidos molestos
   icon: "fa-solid fa-bullhorn"
   link: /normas/ruidos-molestos

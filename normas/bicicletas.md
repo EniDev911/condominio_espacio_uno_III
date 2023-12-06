@@ -2,12 +2,14 @@
 layout: default
 title: Bicicletas
 banner: true
+bannerimg: /assets/bicicletas.png
 ---
 
-
-
-
-## Obligaciones y restricciones para los usuarios:
+{% if page.banner %}
+	{% include banner.html %}
+{% else %}
+ 	{% include main_banner.html %}
+{% endif %}
 
 <ul class="font-karla list-group list-group-numbered">
 	<li class="list-group-item list-group-item-warning shadow mb-2">El estacionamiento de las bicicletas se realizará exclusivamente en el bicicletero instalado para este efecto (<strong class="text-danger">se prohibe dejar bicicletas en cualquier otro sector del condominio</strong>).</li>

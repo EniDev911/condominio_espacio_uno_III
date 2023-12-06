@@ -18,3 +18,6 @@ La responsabilidad civil, legal, económica y social por todos los copropietario
 
 <h5 align="center" class="font-karla fw-bold">Condominio Espacio Uno III</h5>
 <h6 align="center" class="font-karla fw-normal">Puerta del Mar, La Serena</h6>
+
+
+<a href="outlook.eml">abrir link</a>

@@ -1,13 +1,17 @@
 <!-- Hero Banner Section -->
 <section class="hero-banner" style="margin-top: 80px;">
-    <div class="container">
-        <div class="row row align-items-center">
-            <div class="col-lg-5 offset-lg-1 order-lg-1">
-                <img src="{{ page.bannerimg | relative_url }}" alt="pic" width="400">
+    <div>
+        <div class="row align-items-center justify-content-between" id="flex_banner">
+            <div class="col-lg-5">
+                {% if include.content %}
+                    {{ include.content }}
+                {% else %}
+                    <img src="{{ page.bannerimg | relative_url }}" alt="pic" width="400">
+                {% endif %}
             </div>
             <div class="col-lg-6">
-                <h1 class="mt-3" style="color:lightseagreen">{{ page.title | upcase }}</h1>
-                <p class="lead text-secondary my-5 fs-4">{{ page.subtitle | markdownify }}</p>
+                <h2 class="display-4 fw-bold" style="color:lightseagreen">{{ page.title | upcase }}</h2>
+                <p class="lead text-secondary my-5 fs-4 fw-bold">{{ page.subtitle }}</p>
             </div>
         </div>
     </div>

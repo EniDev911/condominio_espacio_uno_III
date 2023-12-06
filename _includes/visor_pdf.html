@@ -2,6 +2,19 @@
     #myframe {
         border: 2px solid #121212;
     }
+    ::-webkit-scrollbar {
+        height: 10px;              /* height of horizontal scrollbar ← You're missing this */
+        width: 10px;               /* width of vertical scrollbar */
+        // border: 1px solid #d5d5d5;
+        border-radius: 0;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #fca;
+        border-radius: 0;
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: transparent ;
+    }
     button.ifr-btn {
             background: #f93939;
             border: none;
@@ -38,16 +51,25 @@
             background: #323639;
             border: 2px solid #323639;
         }
-
+        .v_title {
+            background: #323639;
+            margin: 0;
+            color: #f3f3f1;
+            padding: 10px 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+        }
 </style>
 <div class="flex">
+    <h3 class="v_title display-4">Normas de uso</h3>
     <div class="group-btn-ifr">
-        <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}" style="display: block;">fullscreen</button>
+        <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}" style="display: block;">Pantalla completa</button>
         <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>
         <button id="share" class="ifr-btn" onclick="share('{{ include.pdf | relative_url }}')">Compartir</button>
         <button id="toolbar" class="ifr-btn d-none d-lg-block">Ocultar toolbar</button>
     </div>
-    <iframe id="myframe" name="myframe" src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0" style="width:100%;height: 600px; overflow: hidden !important;" type="application/pdf" scrolling="no" frameborder="0"></iframe>
+    <iframe id="myframe" name="myframe" src="{{ include.pdf | relative_url }}?#zoom=100&view=fitH&navpanes=0&scrollbar=0" style="width:100%;height: 600px; overflow: hidden !important;" scrolling="no" frameborder="0"></iframe>
 </div>
 <script>
 const toolbar_btn = document.querySelector("#toolbar");
