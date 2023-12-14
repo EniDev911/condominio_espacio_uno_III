@@ -34,6 +34,25 @@ bannerimg: /assets/quincho_b.jpg
 	 	}
 	}
 </style>
+
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ25Y3NUgO9rMe0WwnxB9AgTLp5Hq8xxNuVuXfj1xIa9zlK3IdoMzwDa1XuYhIZTB3jycTFZqfhM?gv=true',
+      color: '#039BE5',
+      label: 'Reservar quincho',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+
 <iframe src="https://embed.styledcalendar.com/#716zRSVoNNOHuh9Z5UgY" title="Styled Calendar" class="styled-calendar-container shadow-sm rounded" style="width: 100%; border: none;" data-cy="calendar-embed-iframe" id="calendar"></iframe>
 <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 
