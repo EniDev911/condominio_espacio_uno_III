@@ -2,21 +2,22 @@
     #myframe {
         border: 2px solid #121212;
     }
-    ::-webkit-scrollbar {
+    iframe::-webkit-scrollbar {
         height: 10px;              /* height of horizontal scrollbar ← You're missing this */
         width: 10px;               /* width of vertical scrollbar */
         // border: 1px solid #d5d5d5;
         border-radius: 0;
     }
-    ::-webkit-scrollbar-thumb{
+    iframe::-webkit-scrollbar-thumb{
         background: #fca;
         border-radius: 0;
     }
-    ::-webkit-scrollbar-corner {
+    iframe::-webkit-scrollbar-corner {
         background-color: transparent ;
     }
     button.ifr-btn {
-            background: #f93939;
+            /*background: #f93939;*/
+            background: #20b1aa;
             border: none;
             padding: 7px 14px;
             color: #fff;
@@ -40,7 +41,7 @@
             justify-content: space-between;
             width: 100%;
             margin: auto;
-            background: #323639;
+            /*background: #323639;*/
         }
 
         .group-btn-ifr {
@@ -50,19 +51,20 @@
             margin: auto;
             background: #323639;
             border: 2px solid #323639;
+            padding-bottom: 3px;
         }
         .v_title {
-            background: #323639;
+            background: #20b1aa;
             margin: 0;
             color: #f3f3f1;
             padding: 10px 0;
             text-align: center;
             text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
+            border: 2px solid #323639;
         }
 </style>
 <div class="flex">
-    <h3 class="v_title display-4">Normas de uso</h3>
+    <h3 class="v_title display-5">Normas de uso</h3>
     <div class="group-btn-ifr">
         <button class="ifr-btn d-none d-lg-block" onclick="{document.getElementById('myframe').requestFullscreen()}" style="display: block;">Pantalla completa</button>
         <button id="open_blank" class="ifr-btn">Abrir en nueva ventana</button>

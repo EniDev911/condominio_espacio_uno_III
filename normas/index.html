@@ -23,12 +23,10 @@ banner: true
 </div>
 {% endcapture %}
 
-{% if page.banner %}
-	{% include banner.html content=normas %}
-{% else %}
- 	{% include main_banner.html %}
-{% endif %}
 
+<div class="content">
+  {% include banner.html content=normas %}
+</div>
 
 
 
