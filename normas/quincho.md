@@ -25,12 +25,11 @@ bannerimg: /assets/quincho_b.jpg
 <style type="text/css">
 	#calendar {
 		border: 1px solid #ccc7 !important;
-		height: 600px !important;
+		/*height: 600px !important;*/
 	}
 	@media (max-width: 600px) {
 		#calendar {
-			height: auto !important;
-			border: 1px solid #f00 !important;
+			/*height: auto !important;*/
 	 	}
 	}
 </style>
