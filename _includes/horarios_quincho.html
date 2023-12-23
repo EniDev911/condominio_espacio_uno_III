@@ -1,29 +1,12 @@
-<style>
-	fieldset, legend {
-	   all: revert;
-	   text-align: center;
-	   background: #fff;
-	}
-	fieldset {
-	   background: #fff;
-	   border: 1px solid #ccc;
-	   border-radius: 8px;
-	   margin: 15px 0;
-	}
-	.nav-link {
-		color: #107A89;
-	}
-</style>
-
-<fieldset  class="shadow-sm">
+<fieldset>
 	<legend>
-<h3 class="rounded text-uppercase fs-1" style="color: lightseagreen;">Horarios disponibles</h3>
+<h3 class="rounded fs-2">Horarios disponibles</h3>
 	</legend>
 <!-- BLOQUE HORARIOS -->
 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
     {% for item in site.data.normas[0].bloques %}
       <li class="nav-item fw-bold" role="presentation">
-        <button class="nav-link {% if item.active %}active{% endif %} border-2" id="{{ item.bloque }}" data-bs-toggle="tab" data-bs-target="#{{ item.bloque }}_pane" type="button" role="tab" aria-controls="{{ item.bloque }}" aria-selected="true">{{ item.nombre | upcase }}</button>
+        <button class="nav-link {% if item.active %}active{% endif %} border-2" id="{{ item.bloque }}" data-bs-toggle="tab" data-bs-target="#{{ item.bloque }}_pane" type="button" role="tab" aria-controls="{{ item.bloque }}" aria-selected="true" style="color: #107A89;">{{ item.nombre | upcase }}</button>
        </li>
     {% endfor %}
 </ul>
@@ -32,4 +15,14 @@
       <div class="tab-pane fade fs-5 fw-bold {% if item.active %}show active{% endif %}" id="{{ item.bloque }}_pane" role="tabpanel" aria-labelledby="{{ item.bloque }}_pane" tabindex="0" style="color: #107A89"><i class="fa fa-clock"></i> {{ item.horario | upcase }}</div>
     {% endfor %}
 </div>
+</fieldset>
+<fieldset>
+	<legend>
+<h3 class="rounded text-uppercase fs-2">Valores</h3>
+	</legend>
+<!-- BLOQUE HORARIOS -->
+<ul class="list-group fw-bold">
+  <li class="list-group-item text-secondary fs-3">$10.000 (sin sala)</li>
+  <li class="list-group-item text-secondary fs-3">$15.000 (con sala)</li>
+</ul>
 </fieldset>

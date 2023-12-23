@@ -1,0 +1,16 @@
+fieldset, legend {
+   all: revert;
+   text-align: center;
+   background: #fff;
+}
+fieldset {
+   background: #fff;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   margin: 15px 0;
+}
+
+legend h3 {
+	text-transform: uppercase;
+	color: lightseagreen;
+}
