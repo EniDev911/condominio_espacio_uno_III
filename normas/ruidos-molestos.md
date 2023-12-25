@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
 title: Música y ruidos molestos
 banner: true
 bannerimg: /assets/ruidos-molestos.jpg
 ---
 
+{% include banner.html %}
 
 <p class="font-karla">
 Los propietarios o arrendatarios de departamentos que organicen o realicen <strong>actividades sociales</strong>, <strong>cualquiera</strong> sea el horario deberán asegurarse de hacerlo a un volumen moderado que no molesta a los vecinos, evitando ruidos molestos, tales como gritos, carreras y/o saltos por las escaleras (<strong style="color: red">PROHIBIDO MULTA INMEDIATA</strong>), especialmente durante la noche, en la que se puede alterar el descanso normal de los demás residentes. <strong>Todos los ruidos que superar los 55 decibeles durante el día, 45 decibeles en horario de descanso.</strong></p>
