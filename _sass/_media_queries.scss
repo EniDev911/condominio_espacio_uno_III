@@ -11,7 +11,7 @@
         flex-direction: row-reverse;
     }
     .carousel-control-prev, .carousel-control-next {
-        display: block;
+        visibility: visible;
     }
 }
 

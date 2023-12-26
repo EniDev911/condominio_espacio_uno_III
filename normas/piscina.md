@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Normas Piscina"
 subtitle: "La Piscina es un espacio común y se aplican todas las normas internas de convivencia y reglamentos del condominio"
 banner: true
