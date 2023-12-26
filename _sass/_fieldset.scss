@@ -1,13 +1,15 @@
 fieldset, legend {
-   all: revert;
-   text-align: center;
-   background: #fff;
+	all: revert;
+	text-align: center;
+	background: #fff;
 }
 fieldset {
-   background: #fff;
-   border: 1px solid #ccc;
-   border-radius: 8px;
-   margin: 15px 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin: 15px 0;
+	width: 100%;
+	position: relative;
 }
 
 legend h3 {

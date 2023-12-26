@@ -16,27 +16,28 @@
     <legend>
         <h3 class="text-center text-uppercase fs-1" style="color: lightseagreen;">Conoce nuestro quincho</h3>
     </legend>
-    <div class="row mt-4">
-        <!-- COL: 1 > CARD : 1 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
-            <div class="card">
-                <img src="{{ '/assets/quincho/01.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
-                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
-            </div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="{{ '/assets/quincho/01.jpg' | relative_url }}" class="d-block w-75 mx-auto" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="400" style="object-fit: cover; z-index: 9999">
         </div>
-        <!-- COL: 1 > CARD : 1 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
-            <div class="card">
-                <img src="{{ '/assets/quincho/02.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
-                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
-            </div>
+        <div class="carousel-item">
+          <img src="{{ '/assets/quincho/02.jpg' | relative_url }}" class="d-block w-75 mx-auto" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="400" style="object-fit: cover; z-index: 9999">
         </div>
-        <!-- COL: 3 > CARD : 3 -->
-        <div class="col-10 col-md-6 col-lg-4 col-xl-4 mb-3 mb-xl-0 mx-auto">
-            <div class="card">
-                <img src="{{ '/assets/quincho/03.jpg' | relative_url }}" class="card-img-top" alt="img - quincho"
-                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="220">
-            </div>
+        <div class="carousel-item">
+          <img src="{{ '/assets/quincho/03.jpg' | relative_url }}" class="d-block w-75 mx-auto" alt="img - quincho"
+                    data-bs-toggle="tooltip" title="abrir" data-bs-placement="bottom" height="400" style="object-fit: cover; z-index: 9999">
         </div>
+      </div>
+      <button class="carousel-control-prev" style="background: #000; height: 80px; width:80px; margin: auto 0; border-radius: 50%" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" style="background: #000; height: 80px; width:80px; margin: auto 0; border-radius: 50%" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 </fieldset>

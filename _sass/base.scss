@@ -1,4 +1,5 @@
 @import 'fieldset';
+@import 'media_queries';
 
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
@@ -55,7 +56,6 @@ body {
 #flex_banner {
     flex-direction: column-reverse;
 }
-
 
 h2, h3 {
     color: $headingForeColor;
