@@ -1,0 +1,11 @@
+- title: Quincho
+  icon: "fa-solid fa-house-chimney"
+  text: "Destinado para reuniones y actividades sociales"
+  url: /espacios-comunes/quincho
+  img: /assets/quincho_b.jpg
+
+- title: Piscina
+  icon: "fa-solid fa-house-chimney"
+  text: "Destinado para grupos reducidos de personas"
+  url: /espacios-comunes/piscina
+  img: /assets/piscina.jpg

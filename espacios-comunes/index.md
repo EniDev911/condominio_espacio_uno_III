@@ -11,9 +11,16 @@ links:
 ---
 
 
-
-<div>
-{% for item in page.links %}
-		<a href="{{ page.url | relative_url | append: item.link }}">{{ item.name }}</a>
-{% endfor %}
+<div class="row g-3 justify-content-center mt-5">
+	{% for item in site.data.espacios_comunes %}
+	<div class="col-10 col-md-6 col-lg-4">
+		{% include card.html
+			id=forloop.index0
+			title=item.title
+			text=item.text
+			href=item.url
+			img=item.img
+		%}
+	</div>
+	{% endfor %}
 </div>
