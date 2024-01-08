@@ -1,5 +1,31 @@
+@media (min-width: 1100px) {
+    .content {
+        width: 80%;
+    }
+    .hero-banner  {
+        img {
+            display: inline-block;
+        }
+     }
+     #flex_banner {
+        flex-direction: row-reverse;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        visibility: visible;
+    }
+}
+
 @media(hover:hover){
 	.nav-item:hover {
 		background: #ddd !important;
 	}
+	.hero-banner  {
+        img {
+            // transition: filter .3s ease;
+            &:hover {
+                // filter: drop-shadow(2px 3px 12px #290);
+            }
+        }
+     }
 }
+
