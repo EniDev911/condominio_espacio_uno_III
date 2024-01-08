@@ -26,7 +26,15 @@
   icon: "fa-solid fa-bicycle"
   link: /normas/bicicletas
   lista:
-      - Pasar cadena por marco y rueda
+      - El estacionamiento de las bicicletas se realizará exclusivamente en el bicicletero instalado para este efecto (<strong class="text-danger">se prohibe dejar bicicletas en cualquier otro sector del condominio</strong>)
+      - "En el bicicletero se deben contemplar las siguientes normas:\n
+        <ul>
+          <li>Las bicicletas deben quedar amarradas con cadena en bicicletero.</li>
+          <li>Las cadenas u otro elementos de afianzamiento de seguridad deben instalarse entre el marco y una de sus ruedas.</li>
+          <li>Se recomienda encarecidamente utilizar candados o sistemas de seguridad adecuados para evitar el robo de bicicletas.</li>
+          <li><strong class='text-danger'>El condominio no se hace responsable por robos o daños a las bicicletas</strong>.</li>
+        </ul>"
+      - Está prohibido bloquear pasillos, escaleras, salidas de emergencias con bicicletas (<strong>Notificación - Multa</strong>). Estos espacios deben mantenerse libres de obstáculos para garantizar la seguridad de todos los residentes. 
 - nombre: Estacionamientos
   icon: "fa-solid fa-car"
 - nombre: Piscina
