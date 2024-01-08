@@ -14,3 +14,5 @@ bannerimg: /assets/bicicletas.png
 		<li class="list-group-item list-group-item-warning mb-2 shadow">{{ item }}</li>
 	{% endfor %}
 </ul>
+
+<div class="alert alert-danger shadow mt-2"><i class="fas fa-exclamation-triangle"></i> El incumplimiento de cualquier item del reglamento podrá acarrear sanciones, incluyendo la retirada de bicicletas.</div>
