@@ -6,8 +6,9 @@ banner: true
 bannerimg: /assets/piscina.jpg
 ---
 
-<h3 align="center" class="display-5 text-uppercase">Normas de uso</h3>
+{% include banner.html %}
 
+<hr class="my-5">
 
 {% include visor_pdf.html
 	pdf='/assets/pdfs/reglamento_piscina.pdf'
