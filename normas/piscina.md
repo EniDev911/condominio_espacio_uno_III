@@ -11,6 +11,7 @@ bannerimg: /assets/piscina.jpg
 <hr class="my-5">
 
 {% include visor_pdf.html
+	title='normas'
 	pdf='/assets/pdfs/reglamento_piscina.pdf'
 %}
 
