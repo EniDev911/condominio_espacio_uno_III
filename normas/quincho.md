@@ -11,6 +11,7 @@ bannerimg: /assets/quincho_b.jpg
 <hr>
 
 {% include visor_pdf.html
+	title='Normas de uso'
 	pdf='/assets/pdfs/uso_quincho.pdf'
 %}
 
