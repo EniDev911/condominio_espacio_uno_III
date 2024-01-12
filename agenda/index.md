@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "Servicios"
+title: "Agenda"
+banner: true
+bannerimg: /assets/contactos.png
 ---
 
 {% include banner.html %}

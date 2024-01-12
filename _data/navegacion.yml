@@ -1,8 +1,14 @@
 - name: Inicio
   link: /
+  icon: "fa-solid fa-house"
 - name: Normas
   link: /normas/
+  icon: "fa-solid fa-list-check"
 - name: Espacio Comunes
   link: /espacios-comunes/
-- name: Servicios
-  link: /servicios/
+  icon: "fa-solid fa-people-group"
+# - name: Servicios
+#   link: /servicios/
+- name: Agenda
+  link: /agenda/
+  icon: "fa-solid fa-address-book"

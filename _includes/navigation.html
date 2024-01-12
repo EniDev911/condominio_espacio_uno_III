@@ -22,7 +22,8 @@
                  {% else %}
                  class="nav-link"
                 {% endif %}>
-              {{ item.name | upcase }}
+               <i class="{{ item.icon }} fs-5 me-2"></i>
+               {{ item.name | upcase }}
             </a>
           </li>
           {% endfor %}
