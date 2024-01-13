@@ -1,6 +1,6 @@
-- name: Inicio
-  link: /
-  icon: "fa-solid fa-house"
+# - name: Inicio
+#   link: /
+#   icon: "fa-solid fa-house"
 - name: Normas
   link: /normas/
   icon: "fa-solid fa-list-check"
