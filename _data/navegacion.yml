@@ -12,3 +12,5 @@
 - name: Agenda
   link: /agenda/
   icon: "fa-solid fa-address-book"
+- name: Arriendos
+  link: /arriendos/
