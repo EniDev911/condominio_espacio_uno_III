@@ -5,7 +5,6 @@
     iframe::-webkit-scrollbar {
         height: 10px;              /* height of horizontal scrollbar ← You're missing this */
         width: 10px;               /* width of vertical scrollbar */
-        // border: 1px solid #d5d5d5;
         border-radius: 0;
     }
     iframe::-webkit-scrollbar-thumb{
@@ -101,14 +100,12 @@ function openMailApplication(file) {
     // alert('mailto:email@example.com?'+params)
 }
 
-
 const share = async (file) => {
     const response = await fetch(file);
     const buffer = await response.arrayBuffer();
 
     const pdf = new File([buffer], file.split('/')[4], { type: "application/pdf" });
     const files = [pdf];
-
     // Share PDF file if supported.
     if ("share" in navigator) {
         await navigator.share({ files });
