@@ -103,7 +103,7 @@ function openMailApplication(file) {
 const share = async (file) => {
     const response = await fetch(file);
     const buffer = await response.arrayBuffer();
-
+    // 'condominioespaciouno3.cl/assets/pdfs/doc.pdf'
     const pdf = new File([buffer], file.split('/')[3], { type: "application/pdf" });
     const files = [pdf];
     // Share PDF file if supported.
