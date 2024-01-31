@@ -104,7 +104,7 @@ const share = async (file) => {
     const response = await fetch(file);
     const buffer = await response.arrayBuffer();
 
-    const pdf = new File([buffer], file.split('/')[2], { type: "application/pdf" });
+    const pdf = new File([buffer], file.split('/')[3], { type: "application/pdf" });
     const files = [pdf];
     // Share PDF file if supported.
     if ("share" in navigator) {
