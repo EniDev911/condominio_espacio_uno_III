@@ -18,6 +18,6 @@ bannerimg: /assets/bicicletas.png
 <div class="alert alert-danger shadow mt-2"><i class="fas fa-exclamation-triangle"></i> El incumplimiento de cualquier item del reglamento podrá acarrear sanciones, incluyendo la retirada de bicicletas.</div>
 
 
-<div class="col-12 col-md-6 mx-auto mt-4">
-	<img src="{{ '/assets/responsabilidad_bicicletas.png' | relative_url }}" class="img-fluid">
+<div class="col-10 col-md-6 mx-auto mt-4">
+	<img src="{{ '/assets/responsabilidad_bicicletas.png' | relative_url }}" class="img-fluid d-block">
 </div>
