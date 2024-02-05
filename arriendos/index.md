@@ -17,7 +17,7 @@ A continuación veremos la forma correcta de como se debe llenar una **ficha de 
 - Firmar al final usando el link que dice **Firma digital aquí**.
 - Descargar el documento **PDF** que se generará si todo es correcto.
 
-Una vez se descarga el documento **PDF** se debe enviar al siguiente correo <a href="mailto:garita.espaciouno@gmail.com">garita.espaciouno@gmail.com</a>
+Una vez se descarga el documento **PDF** se debe enviar al siguiente correo <a href="mailto:garita.espaciouno@gmail.com">garita.espaciouno@gmail.com</a><br> o en su defecto al correo del condominio <a href="mailto:comite.espaciouno@gmail.com">comite.espaciouno@gmail.com</a>
 
 <a href="https://enidev911.github.io/fichas-residentes/" target="blank" class="btn btn-primary">
 Ir al formulario
