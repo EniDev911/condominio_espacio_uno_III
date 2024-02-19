@@ -1,4 +1,5 @@
 @import 'fieldset';
+@import 'form';
 
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
@@ -10,11 +11,6 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
   min-height: 100vh;
-}
-
-.content {
-    width: 90%;
-    margin: 0 auto;
 }
 
 .font-karla {

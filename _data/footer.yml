@@ -11,3 +11,10 @@ links:
 faq:
   - name: "¿Cómo agendar un espacio común?"
     link: /espacios-comunes/arriendo
+contacto:
+  - text: Federico Arcos 599, La Serena
+    icon: "fas fa-home"
+  - text: comite.espaciouno@gmail.com
+    icon: "fas fa-envelope"
+  - text: garita.espaciouno@gmail.com
+    icon: "fas fa-envelope"
