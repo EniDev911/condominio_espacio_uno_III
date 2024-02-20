@@ -1,10 +1,11 @@
-import { cargarDepartamentos } from "./pre-carga.js"
+// import { cargarDepartamentos } from "./pre-carga.js"
 import { formatDate } from "./utilities.js"
 import "./handlers.js";
 
 // tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+export let signaturePad = null;
 
 document.querySelectorAll("img[alt*='img']").forEach(element => {
   element.style.cursor = "pointer";
@@ -25,28 +26,14 @@ document.querySelectorAll("img[alt*='img']").forEach(element => {
 })
 
 function initApplication() {
-  cargarDepartamentos();
-  $('select').bsSelectDrop({
-    search: true,
-    btnWidth: 'fit-content',
-    btnEmptyText: 'Selecciona Departamento',
-    btnClass: 'btn btn-light w-100 text-dark',
-    menuPreHtml:'<b>Departamentos</b>',
-      // menuAppendHtml:'<b>End</b>',
-      dropCenter:true,
-      showActionMenu:true
-    });
-  // $(function () {
-  //   $('.date').datetimepicker({
-  //     "locale": 'es',
-  //     "allowInputToggle": true,
-  //     "showClose": true,
-  //     "showClear": true,
-  //     "showTodayButton": true,
-  //     "format": "DD/MM/YYYY",
-  //     "defaultDate": new Date()
-  //   });
-  // });
+// fa-regular fa-building
+$('.selectpicker').selectpicker('setStyle','text-dark btn-light text-uppercase');
+
+  // cargarDepartamentos();
+  const canvas = document.querySelector("canvas");
+  canvas.height = canvas.offsetHeight;
+  canvas.width = canvas.offsetWidth;
+  signaturePad = new SignaturePad(canvas, {});
 
   const configDatePicker = {
     uiLibrary: 'bootstrap5',

@@ -2,7 +2,10 @@
 	font-weight: 500;
 }
 
-.dropdown-menu {
-	max-height: 190px;
-	overflow: auto;
+input[type="search"] {
+	text-transform: uppercase;
+}
+
+.plus, .minus {
+	cursor: pointer;
 }

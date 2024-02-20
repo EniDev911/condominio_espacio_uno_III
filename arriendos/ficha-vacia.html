@@ -1,17 +1,17 @@
 ---
 layout: page
+title: Fichas Residente
 ---
 
 <h1 align="center" class="mt-4">Condominio Espacio Uno III</h1>
 <h2 align="center">Ficha de Residente</h2>
-<form class="my-5 shadow">
+<form class="my-5" id="form">
 	<section class="p-3 border rounded-top" style="background-color: #d9edf7">
 		<h3 class="text-dark text-uppercase mb-4">Datos del propietario</h3>
 		<div class="row align-items-center justify-content-md-start mb-3">
 			<label for="nro_dpto" class="form-label">N° Departamento:</label>
 			<div class="col-12 col-md-4">
-				<select id="dpto">
-					<option value="" selected>Selecciona</option>
+				<select id="dpto" class="selectpicker w-100" data-live-search="true" data-dropup-auto="false" data-size="5">
 				</select>
 			</div>
 		</div>
@@ -21,7 +21,7 @@ layout: page
 				<input type="text" name="nombre_prop" class="form-control text-capitalize" id="nombre_prop" placeholder="Nombres, apellidos propietario" required>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row g-3">
 			<div class="col-12 col-md-4">
 				<label for="rut_prop" class="form-label">Rut:</label>
 				<input type="tel" name="rut_prop" id="rut_prop" placeholder="Rut Propietario" class="form-control">
@@ -36,7 +36,7 @@ layout: page
 			</div>
 		</div>
 	</section>
-	<section class="p-3 border" style="background-color: #ccc8;" id="corredora">
+	<section class="p-3 border" style="background-color: #eee8;" id="corredora">
 		<h3 class="text-dark text-uppercase mb-0">Datos corredora o encargado</h3><small>(<span class="text-danger">solo si aplica, no obligatorio</span>)</small>
 		<div class="row mt-3">
 			<div class="col-12 mb-3">
@@ -44,7 +44,7 @@ layout: page
 				<input type="text" name="nombre_corredora" class="form-control text-capitalize" id="nombre_corredora" placeholder="Nombres, apellidos corredora">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row g-3">
 			<div class="col-12 col-md-4">
 				<label for="rut_corredora" class="form-label">Rut:</label>
 				<input type="tel" name="rut_corredora" id="rut_corredora" placeholder="Rut Corredora" class="form-control">
@@ -63,15 +63,36 @@ layout: page
 		<h3 class="text-dark text-uppercase mb-4">Periodo de estancia</h3>
 		<h4>Tipo de residente:</h4>
 		<small>(<span class="text-danger">Marcar solo una opción</span>)</small>
-		<div class="d-flex flex-column flex-md-row mt-2 gap-3">
-			<div>
-				<input type="radio" name="tipo_residente" value="turistas" id="turistas" checked> <label for="turistas">Pasajero/Turista</label>
+		<div class="row g-3 mt-2">
+			<div class="col-12 col-md-auto">
+				<div class="input-group">
+					<div class="input-group-text bg-light">
+						<input type="radio" name="tipo_residente" value="turistas" id="turistas" class="form-check-input mt-0" checked> 
+					</div>
+					<span class="input-group-text bg-body">
+						<label for="turistas" class="form-label m-0">Pasajero/Turista</label>
+					</span>
+				</div>
 			</div>
-			<div>
-				<input type="radio" name="tipo_residente" value="año corrido" id="anio_corrido"> <label for="anio_corrido">Año Corrido</label>
+			<div class="col-12 col-md-auto">
+				<div class="input-group">
+					<div class="input-group-text bg-light">
+						<input type="radio" name="tipo_residente" value="año corrido" id="anio_corrido" class="form-check-input mt-0"> 
+					</div>
+					<span class="input-group-text bg-body">
+						<label for="anio_corrido" class="form-label m-0">Año Corrido</label>
+					</span>
+				</div>
 			</div>
-			<div>
-				<input type="radio" name="tipo_residente" value="marzo - diciembre" id="mar_dic"> <label for="mar_dic">Marzo - Diciembre</label>
+			<div class="col-12 col-md-auto">
+				<div class="input-group">
+					<div class="input-group-text bg-light">
+						<input type="radio" name="tipo_residente" value="marzo - diciembre" id="mar_dic" class="form-check-input mt-0"> 
+					</div>
+					<span class="input-group-text bg-body">
+						<label for="mar_dic" class="form-label m-0">Marzo - Diciembre</label>
+					</span>
+				</div>
 			</div>
 		</div>
 		<div class="d-flex flex-column flex-md-row gap-2 mt-4">
@@ -88,19 +109,21 @@ layout: page
 		<small>(<span class="text-danger">solo UNO permitido</span>)</small>
 		<div class="row mt-3 gap-3">
 			<div class="col-xs-12 col-lg-6">
+				<label for="marca" class="form-label">Marca y Modelo</label>
 				<div class="input-group">
-					<span class="input-group-text">
-						Marca y Modelo
-					</span>
 					<input type="text" name="marca" class="form-control text-uppercase" placeholder="Ej: KIA SORENTO" id="marca">
+					<span class="input-group-text bg-transparent">
+						<i class="fa-solid fa-car fs-5 text-secondary"></i>
+					</span>
 				</div>
 			</div>
 			<div class="col-xs-8 col-lg-3">
+				<label for="patente" class="form-label">Patente</label>
 				<div class="input-group">
-					<span class="input-group-text">
-						Patente
-					</span>
 					<input type="text" name="patente" class="form-control text-uppercase" placeholder="Ej: DCL878" id="patente" maxlength="6">
+					<span class="input-group-text bg-transparent">
+						<i class="fa-solid fa-ticket fs-5 text-secondary"></i>
+					</span>
 				</div>
 			</div>
 			<h4>Mascotas</h4>
@@ -115,23 +138,63 @@ layout: page
 			</div>
 			<div class="row d-none" id="box_mascotas">
 				<div class="col-auto">
-					<label for="cant_perros" class="form-label">Perros</label>
+					<label for="cant_perros" class="form-label">Perros <i class="fa-solid fa-dog"></i>:</label>
 					<div class="input-group">
-						<span class="input-group-text">
-							<i class="fa-solid fa-dog"></i>
+						<span class="input-group-text plus">
+							<i class="fa-solid fa-plus"></i>
 						</span>
-						<input type="number" class="form-control" min="0" max="5" value="0" inputmode="numeric" id="cant_perros">
+						<span class="input-group-text bg-body" id="cant_perros">0</span>
+						<span class="input-group-text minus">
+							<i class="fa-solid fa-minus"></i>
+						</span>
 					</div><!-- /input-group -->
 				</div><!-- /.col -->
 				<div class="col-auto">
-					<label for="cant_gatos" class="form-label">Gatos</label>
+					<label for="cant_gatos" class="form-label">Gatos <i class="fa-solid fa-cat"></i>:</label>
 					<div class="input-group">
-						<span class="input-group-text">
-							<i class="fa-solid fa-cat"></i>
+						<span class="input-group-text plus">
+							<i class="fa-solid fa-plus"></i>
 						</span>
-						<input type="number" class="form-control" min="0" max="4" value="0" inputmode="numeric" id="cant_gatos">
+						<span class="input-group-text bg-body" id="cant_gatos">0</span>
+						<span class="input-group-text minus">
+							<i class="fa-solid fa-minus"></i>
+						</span>
 					</div><!-- /input-group -->
 				</div><!-- /.col -->
 			</div><!-- /.row -->
 		</section>
+		<section class="p-3 border residente" style="background-color: #fff;" id="residente_1">
+			<h3 class="text-dark text-uppercase text-center mb-4">Residente 1</h3>
+			<div class="row mt-3">
+				<div class="col-12 mb-3">
+					<label for="nombre_r1" class="form-label">Nombres y apellidos: </label>
+					<input type="text" name="nombre_r1" class="form-control text-capitalize" id="nombre_r1" placeholder="Nombres, apellidos Residente 1" required>
+				</div>
+			</div>
+			<div class="row g-3">
+				<div class="col-12 col-md-6">
+					<label for="rut_r1" class="form-label">Rut:</label>
+					<input type="tel" name="rut_r1" id="rut_r1" placeholder="Rut Residente 1" class="form-control" required>
+				</div>
+				<div class="col-12 col-md-6">
+					<label for="tel_r1" class="form-label">Teléfono</label>
+					<input type="tel" name="tel_r1" id="tel_r1" class="form-control" placeholder="Teléfono Residente 1">
+				</div>
+				<div class="col-12">
+					<label for="trabajo_r1" class="form-label">Lugar de trabajo y/o Estudio</label>
+					<input type="text" class="form-control" name="trabajo_r1" id="trabajo_r1" placeholder="Lugar de trabajo o estudio residente 1">
+				</div>
+			</div>
+		</section>
+		<button id="btn_agregar" class="btn btn-primary mt-3" type="button">Añadir otro residente</button>
+		<div id="area_firma" style="margin: 20px 0">
+			<div class="flex" style="align-items: center;">
+				<button id="btn_firmar" type="button" class="btn btn-link">Firma digital aquí</button>
+			</div>
+			<div class="signature mb-2" style="width: 100%; height: 10px">
+				<canvas id="signature-canvas" style="border: 1px dashed red; width: 100%; height: 200px; visibility: hidden;"></canvas>
+			</div>
+		</div>
+		<button id="pdfout" type="submit" class="btn btn-success">Descargar PDF <i class="fa fa-download"></i></button>
+		<button id="resetar" class="btn btn-warning" type="button" onclick="{window.location.reload()}" style="float: right;">Resetear</button>
 	</form>

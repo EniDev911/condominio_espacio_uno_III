@@ -13,11 +13,17 @@
 	<!-- Momentjs -->
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
 	<!-- Plugin -->
-	<script src="{{ "/assets/plugin/jquery.bsSelectDrop.min.js" | relative_url }}"></script>
 	<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
 	<script src="https://unpkg.com/gijgo@1.9.14/js/messages/messages.es-es.js" type="text/javascript"></script>
 	<!-- Bootstrap 5 js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<!-- Plugin Bootstrap select -->
+	<script src="{{ "/assets/plugin/bootstrap-select.min.js" | relative_url }}" type="module"></script>
+	<!-- JSPDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<!-- FONTAWESOME -->
 	<script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
 	{% if page.libs %}
@@ -25,9 +31,8 @@
 	<script src="{{ lib }}"></script>
 	{% endfor %}
 	{% endif %}
-
-
 	<script src="{{ "/assets/scripts/main.js" | relative_url }}" type="module"></script>
+	<script src="{{ "/assets/scripts/pre-carga.js" | relative_url }}"></script>
 
 
 </body>
