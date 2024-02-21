@@ -1,3 +1,21 @@
+// Delegación de eventos
+export function on(eventName, selector, handler) {
+  document.addEventListener(eventName, function(event) {
+    const elements = document.querySelectorAll(selector);
+    const path = event.composedPath();
+    path.forEach(function(node) {
+      elements.forEach(function(elem) {
+        if (node === elem) {
+          handler.call(elem, event);
+        }
+      });
+    });
+  }, true);
+}
+
+export let get = (id) => document.getElementById(id);
+
+
 export function formatDate(date) {
 	return new Intl.DateTimeFormat("es-ES", {
 		day: "2-digit",
@@ -49,4 +67,11 @@ export function formatName(names){
   });
 
   return arrNames.join(" ")
+}
+
+export let selectorAll = (selector, eventName, handler) =>  {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach((ele, index) => {
+    ele.addEventListener(eventName, handler)
+  })
 }

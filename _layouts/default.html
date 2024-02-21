@@ -32,8 +32,10 @@
 	{% endfor %}
 	{% endif %}
 	<script src="{{ "/assets/scripts/main.js" | relative_url }}" type="module"></script>
-	<script src="{{ "/assets/scripts/pre-carga.js" | relative_url }}"></script>
 
+	{% if page.precarga %}
+	<script src="{{ "/assets/scripts/pre-carga.js" | relative_url }}"></script>
+	{% endif %}
 
 </body>
 </html>
