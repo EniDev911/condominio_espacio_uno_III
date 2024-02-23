@@ -1,0 +1,11 @@
+{
+  "title": "Condominio Espacio Uno III",
+  "subtitle": "Ficha de Residente",
+  "section1": {
+    "title":  "DATOS DEL PROPIETARIO"
+  },
+  "section2": {
+    "title": "DATOS CORREDORA O ENCARGADO"
+  },
+  "mascotas": "Propietario autoriza mascota:"
+}

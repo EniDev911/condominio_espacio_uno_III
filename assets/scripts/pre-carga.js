@@ -6,12 +6,12 @@ function cargarDepartamentos() {
 			if (j == 1 || j == 2) {
 				for (let k = 1; k <= 10; k++) {
 					select_deptops.innerHTML +=
-					`<option data-icon="fa-regular fa-building">${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}</option>`
+						`<option data-icon="fa-regular fa-building" value="DPTO. ${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}">${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}</option>`
 				}
 			} else {
 				for (let k = 1; k <= 12; k++) {
 					select_deptops.innerHTML +=
-					`<option data-icon="fa-regular fa-building">${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}</option>`
+						`<option data-icon="fa-regular fa-building" value="DPTO. ${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}">${BLOCK[index]} ${j}${k <= 9 ? '0' + k : k}</option>`
 				}
 			}
 		}
