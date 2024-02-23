@@ -38,7 +38,7 @@ export async function generatePDF(e) {
 
 	const imgLogo = new Image();
 	imgLogo.src = '/assets/logo.png';
-	// doc.addImage(imgLogo, 'PNG', 35, 5, 70, 70);
+	doc.addImage(imgLogo, 'PNG', 35, 5, 70, 70);
 	doc.line(25, 98, 25, 748);
 	doc.line(570, 98, 570, 748);
 	
@@ -124,26 +124,12 @@ export async function generatePDF(e) {
 	docText(doc, 12, '', queryAll('.residente').length.toString(), 203, posY);
 	doc.addImage(firma, 'PNG', 300, 765, 400, 60);
 
-	docText(doc, 10, '', "Ver las normas de la comunidad en https://condominioespaciouno3.cl/normas", 'right', 830);
+	docText(doc, 11, '', "Ver las normas en https://condominioespaciouno3.cl/normas", 'right', (posY+=20));
 
-	doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
-	// doc.save('archivo.pdf');
+	// doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
+	doc.save(formatDate(new Date()) +'_'+ get('dpto').value+'.pdf');
+
 }
-
-// 	doc.addImage(firma, 'PNG', 300, 765, 400, 60);
-
-// 	doc.text("Firma responsable:", 430, yOffset);
-// 	doc.setFont(undefined, 'bold').text("Propietario autoriza mascota:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(aut_mascota, (55 + doc.getTextWidth("Propietario autoriza mascota:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Gatos:", 230, yOffset);
-// 	doc.setFont(undefined, 'normal').text(cantidad_gatos, (235 + doc.getTextWidth("Gatos:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Perros:", 285, yOffset);
-// 	doc.setFont(undefined, 'normal').text(cantidad_perros, (290 + doc.getTextWidth("Perros:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Vehículo:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(marca.toUpperCase(), (50 + doc.getTextWidth("Vehículo:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Patente:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(patente.toUpperCase(), (50 + doc.getTextWidth("Patente:")), yOffset);
-// 	doc.line(25, (yOffset += 10), 570, yOffset);
 // 	if (signaturePad.isEmpty()) {
 // 		Swal.fire({
 // 			title: "Debe firmar antes de descargar el PDF",
