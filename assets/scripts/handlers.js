@@ -8,8 +8,11 @@ import {
 	queryAll,
 	fetchData } from "./utilities.js"
 
-let signaturePad = null;
+const canvas = get("signature-canvas");
+canvas.height = canvas.offsetHeight;
+canvas.width = canvas.offsetWidth;
 
+let signaturePad = new SignaturePad(canvas, {});
 
 function docText(doc, size, style='',text, positionX, positionY){
 	doc.setFontSize(size);
@@ -41,8 +44,6 @@ export async function generatePDF(e) {
 	doc.addImage(imgLogo, 'PNG', 35, 5, 70, 70);
 	doc.line(25, 98, 25, 748);
 	doc.line(570, 98, 570, 748);
-	
-	const firma = signaturePad.toDataURL();
 
 
 	let posY = 30;
@@ -122,25 +123,36 @@ export async function generatePDF(e) {
 	docText(doc, 12, '', get("cant_perros").textContent, 340, posY);
 	docText(doc, 12, 'bold', 'Cantidad total de personas:', 'right', (posY += 20));
 	docText(doc, 12, '', queryAll('.residente').length.toString(), 203, posY);
-	doc.addImage(firma, 'PNG', 300, 765, 400, 60);
+	docText(doc, 11, '', "Ver las normas en https://condominioespaciouno3.cl/normas", 'right', (posY+=18));
 
-	docText(doc, 11, '', "Ver las normas en https://condominioespaciouno3.cl/normas", 'right', (posY+=20));
-
-	// doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
-	doc.save(formatDate(new Date()) +'_'+ get('dpto').value+'.pdf');
+	if (signaturePad.isEmpty()) {
+		Swal.fire({
+			title: "Debe firmar antes de descargar el PDF",
+			animation: false
+		})
+	} else {
+		doc.addImage(signaturePad.toDataURL(), 'PNG', 300, 765, 400, 60);
+		doc.save(formatDate(new Date()) +'_'+ get('dpto').value+'.pdf');
+		Swal.fire({
+			icon: "success",
+			title: "ficha PDF descargada con éxito",
+			animation: false
+		}).then((res) => {
+			if (res.isConfirmed) {
+				Swal.fire({
+					icon: "info",
+					title: "RECUERDA",
+					html: `Enviar el documento descargado al correo <a href="mailto:garita.espaciouno@gmail.com">garita.espaciouno@gmail.com</a>`
+				})
+			}
+		})
+		e.target.reset();
+		signaturePad.clear();
+		// location.reload();
+		// doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
+	}
 
 }
-// 	if (signaturePad.isEmpty()) {
-// 		Swal.fire({
-// 			title: "Debe firmar antes de descargar el PDF",
-// 			animation: false
-// 		})
-// 	} else {
-// 		doc.output('save', new Date().toISOString().split('T')[0] + '_'+ dpto.value + '.pdf')
-// 		// doc.output('dataurlnewwindow', { filename: 'archivo.pdf'})
-// 		location.reload();
-// 	}
-// })
 
 
 export function handleOnChangeRadio(event) {
@@ -240,10 +252,7 @@ export function handleOnClickFirmar(e) {
 	if (activate) {
 
 	} else {
-		const canvas = get("signature-canvas");
-		canvas.height = canvas.offsetHeight;
-		canvas.width = canvas.offsetWidth;
-		signaturePad = new SignaturePad(canvas, {});
+	
 		canvas.style.visibility = 'visible';
 		document.querySelector(".signature").style.height = '200px';
 		const div = document.createElement('div');
@@ -259,5 +268,3 @@ export function handleOnClickFirmar(e) {
 		activate = true;
 	}
 }
-
-
