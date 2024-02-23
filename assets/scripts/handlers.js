@@ -87,7 +87,7 @@ export async function generatePDF(e) {
 			// NOMBRE
 			docText(doc, 12, 'bold', 'Nombre:', 40, (posY += 20));
 			get(`nombre_r${i}`) !== null 
-				? docText(doc, 12, '', get(`nombre_r${i}`).value, 95, posY)
+				? docText(doc, 12, '', formatName(get(`nombre_r${i}`).value), 95, posY)
 				: docText(doc, 12, '', '', 95, posY)
 			
 			// RUT
@@ -133,6 +133,8 @@ export async function generatePDF(e) {
 	} else {
 		doc.addImage(signaturePad.toDataURL(), 'PNG', 300, 765, 400, 60);
 		doc.save(formatDate(new Date()) +'_'+ get('dpto').value+'.pdf');
+		e.target.reset();
+		signaturePad.clear();
 		Swal.fire({
 			icon: "success",
 			title: "ficha PDF descargada con éxito",
@@ -143,12 +145,13 @@ export async function generatePDF(e) {
 					icon: "info",
 					title: "RECUERDA",
 					html: `Enviar el documento descargado al correo <a href="mailto:garita.espaciouno@gmail.com">garita.espaciouno@gmail.com</a>`
+				}).then(res => {
+					if (res.isConfirmed) {
+						location.reload();
+					}
 				})
 			}
 		})
-		e.target.reset();
-		signaturePad.clear();
-		// location.reload();
 		// doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
 	}
 
