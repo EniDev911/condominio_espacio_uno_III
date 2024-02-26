@@ -1,133 +1,159 @@
-import { formatDate, addOneYear, darFormatoRUT, formatName, get } from "./utilities.js"
+import { 
+	formatDate, 
+	addOneYear, 
+	darFormatoRUT, 
+	formatName, 
+	get,
+	query,
+	queryAll,
+	fetchData } from "./utilities.js"
 
-// get("form").addEventListener("submit", async (event) => {
-// 	event.preventDefault();
-// 	const doc = new jsPDF('p', 'pt', 'A4');
-// 	const dpto = document.getElementById("dpto");
-// 	const tipo_residente = document.querySelector('input[name="tipo_residente"]:checked').value;
-// 	const ingreso = get("f_ingreso").value;
-// 	const salida = get("f_salida").value;
-// 	const nombre_prop = document.getElementById("nombre_prop").value;
-// 	const rut_prop = document.getElementById("rut_prop").value;
-// 	const tel_prop = document.getElementById("tel_prop").value;
-// 	const mail_prop = get("correo_prop").value;
-// 	const nombre_corredora = document.getElementById("nombre_corredora").value;
-// 	const rut_corredora = document.getElementById("rut_corredora").value;
-// 	const tel_corredora = document.getElementById("tel_corredora").value;
-// 	const mail_corredora = get("correo_corredora").value;
-// 	const residentes = document.querySelectorAll(".residente");
-// 	const aut_mascota = document.querySelector('input[name="autorizacion_mascota"]:checked').value;
-// 	const cantidad_gatos = get("cant_gatos").textContent;
-// 	const cantidad_perros = get("cant_perros").textContent;
-// 	const patente = get("patente").value;
-// 	const marca = get("marca").value;
-// 	const firma = signaturePad.toDataURL();
 
-// 	var xOffset = doc.internal.pageSize.width / 2;
-// 	let yOffset = 25
-// 	doc.setFontSize(20);
-// 	doc.addImage(firma, 'PNG', 300, 765, 400, 60);
-// 	doc.text("Condominio Espacio Uno III", xOffset, yOffset,'center');
-// 	doc.setFontSize(12);
-// 	doc.text("Ficha de Residente", xOffset,(yOffset += 20),'center');
-// 	doc.setFontSize(20);
-// 	doc.text("DPTO. "+dpto.value, xOffset, (yOffset += 23), 'center');
-// 	doc.setFontSize(12);
-// 	doc.setFont(undefined, 'bold').text(tipo_residente.toUpperCase(), 40, (yOffset += 20));
-// 	doc.text("INGRESO:" ,315, yOffset);
-// 	doc.setFont(undefined, 'normal').text(ingreso, (320 + doc.getTextWidth("INGRESO:")), yOffset)
-// 	doc.setFont(undefined, 'bold').text("SALIDA:" , 450, yOffset);
-// 	doc.setFont(undefined, 'normal').text(salida, (455 + doc.getTextWidth("SALIDA:")), yOffset)
-// 	doc.setDrawColor(0, 0, 0);
-// 	doc.line(25, (yOffset += 10), 570, (yOffset));
-// 	doc.line(25, 98, 25, 828);
-// 	doc.line(570, 98, 570, 828);
-// 	doc.setFont(undefined, 'bold').text("DATOS DEL PROPIETARIO", 40, (yOffset += 20));
-// 	doc.setDrawColor(255, 0, 0);
-// 	doc.line(40, (yOffset += 5), 40 + doc.getTextWidth("DATOS DEL PROPIETARIO"), yOffset)
-// 	doc.text("Nombre:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(formatName(nombre_prop), (50 + doc.getTextWidth("Nombre:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Rut:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(rut_prop, (45 + doc.getTextWidth("Rut:")), yOffset);
-// 	// PHONE
-// 	doc.setFont(undefined, 'bold').text("Télefono:", 200, yOffset);
-// 	doc.setFont(undefined, 'normal').text(tel_prop, (210 + doc.getTextWidth("Télefono:")), yOffset);
-// 	// MAIL
-// 	doc.setFont(undefined, 'bold').text("Correo:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(mail_prop, (50 + doc.getTextWidth("Correo")) , yOffset);
-// 	doc.setDrawColor(0, 0, 0);
-// 	doc.line(25, (yOffset += 10), 570, yOffset);
-// 	// CORREDORA
-// 	doc.setFont(undefined, 'bold').text("DATOS CORREDORA O ENCARGADO", 40, (yOffset += 20));
-// 	doc.setDrawColor(255, 0, 0);
-// 	doc.line(40, (yOffset += 5), 40 + doc.getTextWidth("DATOS CORREDORA O ENCARGADO"), yOffset)
-// 	doc.text("Nombre:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(formatName(nombre_corredora), (50 + doc.getTextWidth("Nombre:")), yOffset);
-// 	// RUT
-// 	doc.setFont(undefined, 'bold').text("Rut:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(rut_corredora, (45 + doc.getTextWidth("Rut:")), yOffset);
-// 	// PHONE
-// 	doc.setFont(undefined, 'bold').text("Télefono:", 200, yOffset);
-// 	doc.setFont(undefined, 'normal').text(tel_corredora, (210 + doc.getTextWidth("Télefono:")), yOffset);
-// 	// MAIL
-// 	doc.setFont(undefined, 'bold').text("Correo:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(mail_corredora, (50 + doc.getTextWidth("Correo")) , yOffset);
-// 	doc.setDrawColor(0, 0, 0);
-// 	doc.line(25, (yOffset += 10), 570, yOffset);
 
-// 	for (var i = 1; i < 6; i++) {
-// 		yOffset += 20;
-// 		doc.setFont(undefined, 'bold').text(`RESIDENTE ${i}`, xOffset, yOffset,'center');
-// 		// console.log(element.querySelector(`#nombre_r`${index+1}));
-// 		// NOMBRE
-// 		doc.text("Nombre:", 40, (yOffset += 20));
-// 		if (document.querySelector(`#nombre_r${i}`) !== null) {
-// 			doc.setFont(undefined, 'normal').text(formatName(document.querySelector(`#nombre_r${i}`).value), (50 + doc.getTextWidth("Nombre:")), yOffset);
-// 		}
-// 		// RUT
-// 		doc.setFont(undefined, 'bold').text("Rut:", 40, (yOffset += 20));
-// 		if (document.querySelector(`#rut_r${i}`) !== null) {
-// 			doc.setFont(undefined, 'normal').text(document.querySelector(`#rut_r${i}`).value, (45 + doc.getTextWidth("Rut:")), yOffset);
-// 		}
-// 		 // PHONE
-// 		 doc.setFont(undefined, 'bold').text("Télefono:", 200, yOffset);
-// 		 if (document.querySelector(`#tel_r${i}`) !== null) {
-// 		 	doc.setFont(undefined, 'normal').text(document.querySelector(`#tel_r${i}`).value, (210 + doc.getTextWidth("Télefono:")), yOffset);
-// 		 }
-// 		// LUGAR DE TRABAJO
-// 		doc.setFont(undefined, 'bold').text("Lugar de trabajo:", 40, (yOffset += 20));
-// 		if (document.querySelector(`#trabajo_r${i}`) !== null) {
-// 			doc.setFont(undefined, 'normal').text(document.querySelector(`#trabajo_r${i}`).value, (55 + doc.getTextWidth("Lugar de trabajo:")) , yOffset);
-// 		}
-// 		// LINE
-// 		doc.line(25, (yOffset += 10), 570, yOffset);
-// 	}
+let signaturePad = null;
 
-// 	doc.setFont(undefined, 'bold').text("Cantidad total de personas:", 40, (yOffset += 20));
-// 	doc.text("Firma responsable:", 430, yOffset);
-// 	doc.setFont(undefined, 'normal').text(residentes.length.toString(), (55 + doc.getTextWidth("Cantidad total de personas:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Propietario autoriza mascota:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(aut_mascota, (55 + doc.getTextWidth("Propietario autoriza mascota:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Gatos:", 230, yOffset);
-// 	doc.setFont(undefined, 'normal').text(cantidad_gatos, (235 + doc.getTextWidth("Gatos:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Perros:", 285, yOffset);
-// 	doc.setFont(undefined, 'normal').text(cantidad_perros, (290 + doc.getTextWidth("Perros:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Vehículo:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(marca.toUpperCase(), (50 + doc.getTextWidth("Vehículo:")), yOffset);
-// 	doc.setFont(undefined, 'bold').text("Patente:", 40, (yOffset += 20));
-// 	doc.setFont(undefined, 'normal').text(patente.toUpperCase(), (50 + doc.getTextWidth("Patente:")), yOffset);
-// 	doc.line(25, (yOffset += 10), 570, yOffset);
-// 	if (signaturePad.isEmpty()) {
-// 		Swal.fire({
-// 			title: "Debe firmar antes de descargar el PDF",
-// 			animation: false
-// 		})
-// 	} else {
-// 		doc.output('save', new Date().toISOString().split('T')[0] + '_'+ dpto.value + '.pdf')
-// 		// doc.output('dataurlnewwindow', { filename: 'archivo.pdf'})
-// 		location.reload();
-// 	}
-// })
+function docText(doc, size, style='',text, positionX, positionY){
+	doc.setFontSize(size);
+	doc.setFont(undefined, style === '' ? 'normal': style);
+	switch (positionX) {
+		case 'center':
+			let xOffset = (doc.internal.pageSize.getWidth() - doc.getTextWidth(text)) / 2
+			doc.text(text, xOffset, positionY);
+			break;
+		case 'right':
+			doc.text(text, 40, positionY);
+			break;
+		default:
+			doc.text(text, positionX, positionY);
+	}
+}
+
+
+export async function generatePDF(e) {
+	e.preventDefault();
+	const ficha = await fetchData('/assets/scripts/ficha.json');
+	console.log(ficha);
+	
+	const { jsPDF } = window.jspdf;
+	let doc = new jsPDF('p', 'pt', 'A4');
+
+	const imgLogo = new Image();
+	imgLogo.src = '/assets/logo.png';
+	doc.addImage(imgLogo, 'PNG', 35, 5, 70, 70);
+	doc.line(25, 98, 25, 748);
+	doc.line(570, 98, 570, 748);
+
+
+	let posY = 30;
+	docText(doc, 20, '', ficha.title.toUpperCase(), 'center', posY);
+	docText(doc, 12, '', ficha.subtitle, 'center', (posY += 18));
+	docText(doc, 20, '', get("dpto").value, 'center', (posY +=22));
+	docText(doc, 12, 'bold', query('input[name="tipo_residente"]:checked').value.toUpperCase(),40, (posY += 20))
+	docText(doc, 12, 'bold', "INGRESO:", 305, posY);
+	docText(doc, 12, '', get("f_ingreso").value, 370, posY);
+	docText(doc, 12, 'bold', "SALIDA:", 440, posY);
+	docText(doc, 12, '', get("f_salida").value, 495, posY);
+	doc.line(25, (posY += 8), 570, (posY));
+	docText(doc, 12, 'bold', ficha.section1.title, 'right', (posY += 20));
+	// doc.line(40, (posY += 5), 40 + doc.getTextWidth(ficha.section1.title), posY);
+	doc.line(25, (posY += 10), 570, posY);
+	docText(doc, 12, 'bold', 'Nombre:', 40, (posY += 20));
+	docText(doc, 12, '', formatName(get('nombre_prop').value), 95, posY);
+	docText(doc, 12, 'bold', 'Rut:', 40, (posY += 20));
+	docText(doc, 12, '', get('rut_prop').value, 70, posY);
+	docText(doc, 12, 'bold', 'Teléfono:', 200, posY);
+	docText(doc, 12, 'normal', get('tel_prop').value, 260, posY);
+	docText(doc, 12, 'bold', 'Correo:', 40, (posY += 20))
+	docText(doc, 12, '', get('correo_prop').value, 90, posY)
+	doc.line(25, (posY += 10), 570, posY);
+	docText(doc, 12, 'bold', ficha.section2.title , 'right', (posY += 20))
+	// doc.line(40, (posY += 5), 40 + doc.getTextWidth(ficha.section2.title), posY)
+	doc.line(25, (posY += 10), 570, posY);
+	docText(doc, 12, 'bold', 'Nombre:', 40, (posY += 20));
+	docText(doc, 12, '', formatName(get('nombre_corredora').value), 95, posY);
+	docText(doc, 12, 'bold', 'Rut:', 40, (posY += 20));
+	docText(doc, 12, '', get('rut_corredora').value, 70, posY);
+	docText(doc, 12, 'bold', 'Teléfono:', 200, posY);
+	docText(doc, 12, 'normal', get('tel_corredora').value, 260, posY);
+	docText(doc, 12, 'bold', 'Correo:', 40, (posY += 20))
+	docText(doc, 12, '', get('correo_corredora').value, 90, posY)
+	doc.line(25, (posY += 10), 570, posY);
+	
+		for (var i = 1; i < 6; i++) {
+			posY += 20;
+			docText(doc, 12, 'bold', `RESIDENTE ${i}`, 'center', posY)
+			// NOMBRE
+			docText(doc, 12, 'bold', 'Nombre:', 40, (posY += 20));
+			get(`nombre_r${i}`) !== null 
+				? docText(doc, 12, '', formatName(get(`nombre_r${i}`).value), 95, posY)
+				: docText(doc, 12, '', '', 95, posY)
+			
+			// RUT
+			docText(doc, 12, 'bold', 'Rut:', 40, (posY += 20));
+			get(`rut_r${i}`) !== null
+				? docText(doc, 12, '', get(`rut_r${i}`).value, 70, posY)
+				: docText(doc, 12, '', '', 70, posY)
+			
+			// PHONE
+			docText(doc, 12, 'bold', 'Teléfono:', 200, posY);
+			get(`tel_r${i}`) !== null
+				? docText(doc, 12, '', get(`tel_r${i}`).value, 260, posY)
+				: docText(doc, 12, '', '', 260, posY)
+			
+			// LUGAR DE TRABAJO
+			docText(doc, 12, 'bold', 'Lugar de trabajo:', 40, (posY += 20));
+			get(`trabajo_r${i}`) !== null
+				? docText(doc, 12, '', get(`trabajo_r${i}`).value, 145, posY)
+				: docText(doc, 12, '', '', 145, posY)
+			
+			doc.line(25, (posY += 10), 570, posY);
+		}
+	docText(doc, 12, 'bold', "Patente:", 'right', (posY += 20));
+	docText(doc, 12, '', get('patente').value.toUpperCase(), 90, posY);
+	docText(doc, 12, 'bold', "Vehículo:", 140, posY);
+	docText(doc, 12, '', get('marca').value.toUpperCase(), 200, posY);
+	docText(doc, 12, 'bold', 'Firma responsable:', 430, posY);
+	docText(doc, 12, 'bold', ficha.mascotas, 'right', (posY += 20));
+	docText(doc, 12, '', query('input[name="autorizacion_mascota"]:checked').value.toUpperCase(), (45 + doc.getTextWidth(ficha.mascotas)), posY);
+	docText(doc, 12, 'bold', 'Gatos:', 240, posY);
+	docText(doc, 12, '', get("cant_gatos").textContent, 280, posY);
+	docText(doc, 12, 'bold', 'Perros:', 295, posY);
+	docText(doc, 12, '', get("cant_perros").textContent, 340, posY);
+	docText(doc, 12, 'bold', 'Cantidad total de personas:', 'right', (posY += 20));
+	docText(doc, 12, '', queryAll('.residente').length.toString(), 203, posY);
+	docText(doc, 11, '', "Ver las normas en https://condominioespaciouno3.cl/normas", 'right', (posY+=18));
+
+	if (signaturePad.isEmpty()) {
+		Swal.fire({
+			title: "Debe firmar antes de descargar el PDF",
+			animation: false
+		})
+	} else {
+		doc.addImage(signaturePad.toDataURL(), 'PNG', 300, 765, 400, 60);
+		doc.save(formatDate(new Date()) +'_'+ get('dpto').value+'.pdf');
+		e.target.reset();
+		signaturePad.clear();
+		Swal.fire({
+			icon: "success",
+			title: "ficha PDF descargada con éxito",
+			animation: false
+		}).then((res) => {
+			if (res.isConfirmed) {
+				Swal.fire({
+					icon: "info",
+					title: "RECUERDA",
+					html: `Enviar el documento descargado al correo <a href="mailto:garita.espaciouno@gmail.com">garita.espaciouno@gmail.com</a>`
+				}).then(res => {
+					if (res.isConfirmed) {
+						location.reload();
+					}
+				})
+			}
+		})
+		// doc.output('dataurlnewwindow', { filename: 'archivo.pdf' })
+	}
+
+}
 
 
 export function handleOnChangeRadio(event) {
@@ -150,20 +176,6 @@ export function handleOnChangeRadio(event) {
 	}
 }
 
-// document.querySelectorAll("input[type='radio']").forEach((input) => {
-// 	input.addEventListener('change', handleOnChangeRadio);
-// });
-
-// // increment counter
-// document.querySelectorAll(".plus").forEach((ele, index) => {
-// 	ele.addEventListener("click", () => {
-// 		const perros = parseInt(get('cant_perros').textContent);
-// 		const gatos = parseInt(get('cant_gatos').textContent);
-// 		index === 0 && perros < 5
-// 		? get('cant_perros').textContent = perros + 1
-// 		: index === 1 && gatos < 5 ? get('cant_gatos').textContent = gatos + 1 : ''
-// 	});
-// })
 
 export function counterIncrement(e) {
 	const esPerro = e.target.classList.contains('dog');
@@ -181,22 +193,10 @@ export function decrementCounter(e) {
 	const esGato = e.target.classList.contains('cat');
 	const perros = parseInt(get('cant_perros').textContent);
 	const gatos = parseInt(get('cant_gatos').textContent);
-	esPerro && perros < 5
-	? get('cant_perros').textContent = perros + 1
-	: esGato && gatos < 5 ? get('cant_gatos').textContent = gatos + 1 : ''
+	esPerro && perros > 0
+	? get('cant_perros').textContent = perros - 1
+	: esGato && gatos > 0 ? get('cant_gatos').textContent = gatos - 1 : ''
 }
-
-// // decrement counter
-// document.querySelectorAll(".minus").forEach((ele, index) => {
-// 	ele.addEventListener("click", () => {
-// 		const perros = parseInt(get('cant_perros').textContent);
-// 		const gatos = parseInt(get('cant_gatos').textContent);
-// 		index === 0 && perros > 0
-// 		? get('cant_perros').textContent = perros - 1
-// 		: index === 1 && gatos > 0 ? get('cant_gatos').textContent = gatos - 1 : ''
-// 	});
-// })
-
 
 import { residente } from './templates.js';
 let aux = 1;
@@ -250,14 +250,13 @@ export function handleOnInputRut(e) {
 let activate = false;
 
 export function handleOnClickFirmar(e) {
-	let signaturePad = null;
 	if (activate) {
 
 	} else {
 		const canvas = get("signature-canvas");
+		signaturePad = new SignaturePad(canvas, {});
 		canvas.height = canvas.offsetHeight;
 		canvas.width = canvas.offsetWidth;
-		signaturePad = new SignaturePad(canvas, {});
 		canvas.style.visibility = 'visible';
 		document.querySelector(".signature").style.height = '200px';
 		const div = document.createElement('div');
@@ -273,5 +272,3 @@ export function handleOnClickFirmar(e) {
 		activate = true;
 	}
 }
-
-

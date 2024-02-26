@@ -6,7 +6,7 @@ export function residente(num) {
 	<div class="row mt-3">
 	<div class="col-12 mb-3">
 	<label for="nombre_r${num}" class="form-label">Nombres y apellidos: </label>
-	<input type="text" name="nombre_r${num}" class="form-control text-capitalize" id="nombre_r1" placeholder="Nombres, apellidos Residente ${num}" required>
+	<input type="text" name="nombre_r${num}" class="form-control text-capitalize" id="nombre_r${num}" placeholder="Nombres, apellidos Residente ${num}" required>
 	</div>
 	</div>
 	<div class="row g-3">

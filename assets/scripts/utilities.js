@@ -14,7 +14,8 @@ export function on(eventName, selector, handler) {
 }
 
 export let get = (id) => document.getElementById(id);
-
+export let query = (selector) => document.querySelector(selector);
+export let queryAll = (selector) => document.querySelectorAll(selector);
 
 export function formatDate(date) {
 	return new Intl.DateTimeFormat("es-ES", {
@@ -74,4 +75,15 @@ export let selectorAll = (selector, eventName, handler) =>  {
   elements.forEach((ele, index) => {
     ele.addEventListener(eventName, handler)
   })
+}
+
+// Fetch JSON
+export const fetchData = async (file) => {
+  try {
+    const res = await fetch(file);
+    const  datos = await res.json();
+    return datos;
+  } catch (e) {
+    console.log(e.message)
+  }
 }
