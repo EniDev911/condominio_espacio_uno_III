@@ -8,11 +8,9 @@ import {
 	queryAll,
 	fetchData } from "./utilities.js"
 
-const canvas = get("signature-canvas");
-canvas.height = canvas.offsetHeight;
-canvas.width = canvas.offsetWidth;
 
-let signaturePad = new SignaturePad(canvas, {});
+
+let signaturePad = null;
 
 function docText(doc, size, style='',text, positionX, positionY){
 	doc.setFontSize(size);
@@ -255,7 +253,10 @@ export function handleOnClickFirmar(e) {
 	if (activate) {
 
 	} else {
-	
+		const canvas = get("signature-canvas");
+		signaturePad = new SignaturePad(canvas, {});
+		canvas.height = canvas.offsetHeight;
+		canvas.width = canvas.offsetWidth;
 		canvas.style.visibility = 'visible';
 		document.querySelector(".signature").style.height = '200px';
 		const div = document.createElement('div');
