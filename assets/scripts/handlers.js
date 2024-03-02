@@ -44,7 +44,7 @@ import {
 		}
 		const regex1  = /([@#])\S* ?/g;
 		const correo_limpio = val_correo.replace(regex1, '');
-		return `${correo_limpio}@${get(dominio).value}`
+		return `${correo_limpio.toLowerCase()}@${get(dominio).value}`
 	}
 
 	function remplazarRut(rut) {
