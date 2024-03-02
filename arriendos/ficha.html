@@ -43,7 +43,7 @@ precarga: true
 				<div class="col-12 col-lg-4">
 					<label for="correo_prop" class="form-label">Correo propietario:</label>
 					<div class="d-flex">
-						<input type="text" name="correo_prop" id="correo_prop" class="form-control rounded-end-0" placeholder="micorreo">
+						<input type="text" name="correo_prop" id="correo_prop" class="form-control rounded-end-0 text-lowercase" placeholder="micorreo">
 						<span class="input-group-text rounded-0 border" id="basic-addon1">@</span>
 						<div class="position-relative select-editable">
 							<select class="form-select position-absolute rounded-0 rounded-end select-dominio">
@@ -103,8 +103,8 @@ precarga: true
 				<div class="col-12 col-lg-4">
 					<label for="correo_encargado" class="form-label">Correo propietario:</label>
 					<div class="d-flex">
-						<input type="text" name="correo_encargado" id="correo_encargado" class="form-control rounded-end-0" placeholder="micorreo">
-						<span class="input-group-text rounded-0 border" id="basic-addon1">@</span>
+						<input type="text" name="correo_encargado" id="correo_encargado" class="form-control rounded-end-0 text-lowercase" placeholder="micorreo">
+						<span class="input-group-text rounded-0" id="basic-addon1">@</span>
 						<div class="position-relative select-editable">
 							<select class="form-select position-absolute rounded-0 rounded-end select-dominio">
 								<option selected>gmail.com</option>
@@ -268,7 +268,7 @@ precarga: true
 				<div class="col-12 col-md-6">
 					<label for="tel_r1" class="form-label">Teléfono <span class="text-danger">*</span>:</label>
 					<div class="input-group">
-						<input type="tel" name="tel_r1" id="tel_r1" class="form-control" placeholder="Teléfono Residente 1" required>
+						<input type="tel" name="tel_r1" id="tel_r1" class="form-control" placeholder="Teléfono Residente 1" c>
 						<button type="button" class="btn btn-secondary" onclick="tel_r1.value=''">borrar</button>
 					</div>
 				</div>

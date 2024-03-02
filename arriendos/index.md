@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Arriendos
-subtitle: Registro de residentes nuevos
+subtitle: |-
+  Registro de residentes nuevos <div class="alert alert-info m-0" role='alert'><i class="fa-solid fa-lightbulb"></i> Recuerde actualizar su ficha cada vez que cambien los residentes.</div>
 banner: true
 bannerimg: /assets/arriendos.jpg
 ---
