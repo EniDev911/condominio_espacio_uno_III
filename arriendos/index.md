@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Arriendos
-subtitle: Registro de residentes temporales
+subtitle: Registro de residentes nuevos
 banner: true
 bannerimg: /assets/arriendos.jpg
 ---
@@ -14,6 +14,7 @@ A continuación veremos la forma correcta de como se debe llenar una **ficha de 
 
 - Ingresar al [formulario de registro](ficha.html).
 - Llenar todos los campos requeridos.
+- Los campos marcados con un asterisco (`*`) son obligatorios.
 - Firmar al final usando el link que dice **Firma digital aquí**.
 - Descargar el documento **PDF** que se generará si todo es correcto.
 

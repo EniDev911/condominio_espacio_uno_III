@@ -1,4 +1,4 @@
-import { on, formatDate, selectorAll } from './utilities.js'
+import { on, get, formatDate, selectorAll } from './utilities.js'
 import {
 	handleOnInputRut,
 	agregarResidente,
@@ -7,8 +7,8 @@ import {
 	handleOnChangeRadio,
 	counterIncrement,
 	decrementCounter,
-	generatePDF
-
+	generatePDF,
+	onChangeDominio
 } from './handlers.js'
 
 export default function () {
@@ -21,6 +21,8 @@ export default function () {
 	on('submit', '#form', generatePDF);
 	selectorAll('.plus', 'click', counterIncrement);
 	selectorAll('.minus', 'click', decrementCounter);
+	on('change', '.select-dominio', onChangeDominio);
+	// on('click', '#dominio_correo', lol)
 
 	$('.selectpicker').selectpicker('setStyle', 'text-dark btn-light text-uppercase');
 

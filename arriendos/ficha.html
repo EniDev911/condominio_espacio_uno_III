@@ -8,56 +8,115 @@ precarga: true
 <h2 align="center">Ficha de Residente</h2>
 <form class="my-5" id="form" method="post">
 	<!-- novalidate -->
-	<section class="p-3 border rounded-top" style="background-color: #d9edf7">
-		<h3 class="text-dark text-uppercase mb-4">Datos del propietario</h3>
-		<div class="row align-items-center justify-content-md-start mb-3">
-			<label for="nro_dpto" class="form-label">N° Departamento:</label>
-			<div class="col-12 col-md-4">
-				<select id="dpto" class="selectpicker w-100" data-live-search="true" data-dropup-auto="false" data-size="5">
-				</select>
+	<section class="py-3 border rounded-top" style="background-color: #d9edf7" id="section_propietario">
+		<h3 class="text-dark text-uppercase mb-4 bg-light p-3">Datos del propietario (<span style="white-space: pre;" class="text-danger fs-5">NO CONYUGE, NO CORREDORA</span>)</h3>
+		<div class="container">
+			<div class="row align-items-center justify-content-md-start mb-3">
+				<label for="nro_dpto" class="form-label">N° Departamento:</label>
+				<div class="col-12 col-md-4">
+					<select id="dpto" class="selectpicker w-100" data-live-search="true" data-dropup-auto="false" data-size="5">
+					</select>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 mb-3">
-				<label for="nombre_prop" class="form-label">Nombres y apellidos: </label>
-				<input type="text" name="nombre_prop" class="form-control text-capitalize" id="nombre_prop" placeholder="Nombres, apellidos propietario" required>
+			<div class="row">
+				<div class="col-12 mb-3">
+					<label for="nombre_prop" class="form-label">Nombres y apellidos <span class="text-danger">*</span>: </label>
+					<input type="text" name="nombre_prop" class="form-control text-capitalize" id="nombre_prop" placeholder="Nombres, apellidos propietario" required>
+				</div>
 			</div>
-		</div>
-		<div class="row g-3">
-			<div class="col-12 col-md-4">
-				<label for="rut_prop" class="form-label">Rut:</label>
-				<input type="tel" name="rut_prop" id="rut_prop" placeholder="Rut Propietario" class="form-control">
+			<div class="row g-3 mb-3">
+				<div class="col-12 col-lg-4">
+					<label for="rut_prop" class="form-label mb-0 mb-md-2">Rut propietario <span class="text-danger">*</span>:</label>
+					<small class="text-danger" style="white-space: pre;">(si termina en k, remplazar por 0)</small>
+					<div class="input-group rounded">
+						<input type="tel" name="rut_prop" id="rut_prop" placeholder="Rut (Ej. 12.345.678-2)" class="form-control">
+						<button type="button" class="btn btn-secondary" onclick="rut_prop.value=''">borrar</button>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<label for="tel_prop" class="form-label">Teléfono propietario <span class="text-danger">*</span>:</label>
+					<div class="input-group rounded">
+						<input type="tel" name="tel_prop" id="tel_prop" class="form-control" placeholder="Teléfono (Ej: 984687949)">
+						<button type="button" class="btn btn-secondary" onclick="tel_prop.value=''">borrar</button>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<label for="correo_prop" class="form-label">Correo propietario:</label>
+					<div class="d-flex">
+						<input type="text" name="correo_prop" id="correo_prop" class="form-control rounded-end-0" placeholder="micorreo">
+						<span class="input-group-text rounded-0 border" id="basic-addon1">@</span>
+						<div class="position-relative select-editable">
+							<select class="form-select position-absolute rounded-0 rounded-end select-dominio">
+								<option selected>gmail.com</option>
+								<option value="hotmail.com">hotmail.com</option>
+								<option value="outlook.com">outlook.com</option>
+								<option value="yahoo.com">yahoo.com</option>
+								<option value="otro">otro</option>
+							</select>
+							<input type="text" value="gmail.com" class="form-control" disabled placeholder="miempresa.cl" name="dominio_correo" id="dominio_prop" />
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-12 col-md-4">
-				<label for="tel_prop" class="form-label">Teléfono</label>
-				<input type="tel" name="tel_prop" id="tel_prop" class="form-control" placeholder="Teléfono Propietario">
-			</div>
-			<div class="col-12 col-md-4">
-				<label for="correo_prop" class="form-label">Correo</label>
-				<input type="email" name="correo_prop" id="correo_prop" class="form-control" placeholder="micorreo@mail.com">
+			<div class="row g-3 mt-2">
+				<div class="col-12 col-md-auto">
+					<div class="input-group">
+						<div class="input-group-text bg-light">
+							<input type="radio" name="responsable" value="propietario" id="propietario" class="form-check-input mt-0" checked>
+						</div>
+						<span class="input-group-text bg-body">
+							<label for="propietario" class="form-label m-0">Soy propietario</label>
+						</span>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="input-group">
+						<div class="input-group-text bg-light">
+							<input type="radio" name="responsable" value="encargado" id="encargado" class="form-check-input mt-0">
+						</div>
+						<span class="input-group-text bg-body">
+							<label for="encargado" class="form-label m-0">Soy encargado</label>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="p-3 border" style="background-color: #eee8;" id="corredora">
-		<h3 class="text-dark text-uppercase mb-0">Datos corredora o encargado</h3><small>(<span class="text-danger">solo si aplica, no obligatorio</span>)</small>
-		<div class="row mt-3">
-			<div class="col-12 mb-3">
-				<label for="nombre_corredora" class="form-label">Nombres y apellidos: </label>
-				<input type="text" name="nombre_corredora" class="form-control text-capitalize" id="nombre_corredora" placeholder="Nombres, apellidos corredora">
+	<section class="border d-none py-3" style="background-color: #9e43;" id="section_corredora">
+		<h3 class="text-dark text-uppercase mb-0 bg-light p-3">Datos corredora o encargado</h3>
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col-12 mb-3">
+					<label for="nombre_corredora" class="form-label">Nombres y apellidos: </label>
+					<input type="text" name="nombre_corredora" class="form-control text-capitalize" id="nombre_corredora" placeholder="Nombres, apellidos corredora">
+				</div>
 			</div>
-		</div>
-		<div class="row g-3">
-			<div class="col-12 col-md-4">
-				<label for="rut_corredora" class="form-label">Rut:</label>
-				<input type="tel" name="rut_corredora" id="rut_corredora" placeholder="Rut Corredora" class="form-control">
-			</div>
-			<div class="col-12 col-md-4">
-				<label for="tel_corredora" class="form-label">Teléfono</label>
-				<input type="tel" name="tel_corredora" id="tel_corredora" class="form-control" placeholder="Teléfono Corredora">
-			</div>
-			<div class="col-12 col-md-4">
-				<label for="correo_corredora" class="form-label">Correo</label>
-				<input type="email" name="correo_corredora" id="correo_corredora" class="form-control" placeholder="micorreo@mail.com">
+			<div class="row g-3">
+				<div class="col-12 col-lg-4">
+					<label for="rut_corredora" class="form-label">Rut:</label>
+					<input type="tel" name="rut_corredora" id="rut_corredora" placeholder="Rut Corredora" class="form-control">
+				</div>
+				<div class="col-12 col-lg-4">
+					<label for="tel_corredora" class="form-label">Teléfono</label>
+					<input type="tel" name="tel_corredora" id="tel_corredora" class="form-control" placeholder="Teléfono Corredora">
+				</div>
+				<div class="col-12 col-lg-4">
+					<label for="correo_encargado" class="form-label">Correo propietario:</label>
+					<div class="d-flex">
+						<input type="text" name="correo_encargado" id="correo_encargado" class="form-control rounded-end-0" placeholder="micorreo">
+						<span class="input-group-text rounded-0 border" id="basic-addon1">@</span>
+						<div class="position-relative select-editable">
+							<select class="form-select position-absolute rounded-0 rounded-end select-dominio">
+								<option selected>gmail.com</option>
+								<option value="hotmail.com">hotmail.com</option>
+								<option value="outlook.com">outlook.com</option>
+								<option value="yahoo.com">yahoo.com</option>
+								<option value="otro">otro</option>
+							</select>
+							<input type="text" value="" class="form-control" disabled placeholder="miempresa.cl" name="dominio_encargado" id="dominio_encargado" />
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -93,6 +152,16 @@ precarga: true
 					</div>
 					<span class="input-group-text bg-body">
 						<label for="mar_dic" class="form-label m-0">Marzo - Diciembre</label>
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-md-auto">
+				<div class="input-group">
+					<div class="input-group-text bg-light">
+						<input type="radio" name="tipo_residente" value="indefinido" id="indefenido" class="form-check-input mt-0">
+					</div>
+					<span class="input-group-text bg-body">
+						<label for="indefenido" class="form-label m-0">Indefinido</label>
 					</span>
 				</div>
 			</div>
@@ -183,18 +252,25 @@ precarga: true
 			<h3 class="text-dark text-uppercase text-center mb-4">Residente 1</h3>
 			<div class="row mt-3">
 				<div class="col-12 mb-3">
-					<label for="nombre_r1" class="form-label">Nombres y apellidos: </label>
+					<label for="nombre_r1" class="form-label">Nombres y apellidos <span class="text-danger">*</span>: </label>
 					<input type="text" name="nombre_r1" class="form-control text-capitalize" id="nombre_r1" placeholder="Nombres, apellidos Residente 1" required>
 				</div>
 			</div>
 			<div class="row g-3">
 				<div class="col-12 col-md-6">
-					<label for="rut_r1" class="form-label">Rut:</label>
-					<input type="tel" name="rut_r1" id="rut_r1" placeholder="Rut Residente 1" class="form-control" required>
+					<label for="rut_r1" class="form-label">Rut <span class="text-danger">*</span>:</label>
+					<small class="text-danger" style="white-space: pre;">(si termina en k, remplazar por 0)</small>
+					<div class="input-group rounded">
+						<input type="tel" name="rut_r1" id="rut_r1" placeholder="Rut Residente 1" class="form-control" required>
+						<button type="button" class="btn btn-secondary" onclick="rut_r1.value = ''">borrar</button>
+					</div>
 				</div>
 				<div class="col-12 col-md-6">
-					<label for="tel_r1" class="form-label">Teléfono</label>
-					<input type="tel" name="tel_r1" id="tel_r1" class="form-control" placeholder="Teléfono Residente 1">
+					<label for="tel_r1" class="form-label">Teléfono <span class="text-danger">*</span>:</label>
+					<div class="input-group">
+						<input type="tel" name="tel_r1" id="tel_r1" class="form-control" placeholder="Teléfono Residente 1" required>
+						<button type="button" class="btn btn-secondary" onclick="tel_r1.value=''">borrar</button>
+					</div>
 				</div>
 				<div class="col-12">
 					<label for="trabajo_r1" class="form-label">Lugar de trabajo y/o Estudio</label>
