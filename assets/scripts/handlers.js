@@ -23,7 +23,7 @@ import {
 			doc.text(text, 40, positionY);
 			break;
 			default:
-			doc.text(text.length < 2 ? '' : text, positionX, positionY);
+			doc.text(text.trim().length === 0 ? '' : text, positionX, positionY);
 		}
 	}
 
@@ -44,7 +44,7 @@ import {
 		}
 		const regex1  = /([@#])\S* ?/g;
 		const correo_limpio = val_correo.replace(regex1, '');
-		return `${correo_limpio.toLowerCase()}@${get(dominio).value}`
+		return `${correo_limpio.toLowerCase()}@${get(dominio).value.toLowerCase()}`
 	}
 
 	function remplazarRut(rut) {
@@ -140,9 +140,9 @@ import {
 		docText(doc, 12, 'bold', ficha.mascotas, 'right', (posY += 20));
 		docText(doc, 12, '', query('input[name="autorizacion_mascota"]:checked').value.toUpperCase(), (45 + doc.getTextWidth(ficha.mascotas)), posY);
 		docText(doc, 12, 'bold', 'Gatos:', 240, posY);
-		docText(doc, 12, '', get("cant_gatos").textContent, 280, posY);
-		docText(doc, 12, 'bold', 'Perros:', 295, posY);
-		docText(doc, 12, '', get("cant_perros").textContent, 340, posY);
+		docText(doc, 12, '', get('cant_gatos').textContent, 280, posY);
+		docText(doc, 12, 'bold', 'Perros:', 295, posY); cant_perros
+		docText(doc, 12, '', get('cant_perros').textContent, 340, posY);
 		docText(doc, 12, 'bold', 'Cantidad total de personas:', 'right', (posY += 20));
 		docText(doc, 12, '', queryAll('.residente').length.toString(), 203, posY);
 		docText(doc, 11, '', "Ver las normas en https://condominioespaciouno3.cl/normas", 'right', (posY+=18));
@@ -204,8 +204,8 @@ export function handleOnChangeRadio(event) {
 		get("box_mascotas").classList.remove("d-none");
 	}else if (event.target.id === "no") {
 		get("box_mascotas").classList.add("d-none");
-		get('cant_perros').textContent = 0;
-		get('cant_gatos').textContent = 0;
+		get('cant_perros').textContent = "0";
+		get('cant_gatos').textContent = "0";
 	} else if (event.target.id === "encargado") {
 		get("section_corredora").classList.remove("d-none");
 		get("dominio_encargado").value = "gmail.com";
