@@ -8,11 +8,11 @@ bannerimg: /assets/contactos.png
 {% include banner.html %}
 
 {% if site.data.servicios %}
-<div class="row g-3 bg-light my-4 pb-2 rounded">
+<div class="row g-3 bg-body my-4 pb-2 rounded">
   {% for item in site.data.agenda %}
   <div class="col-12 col-lg-4">
 	  <div class="card p-3 bg-body shadow-sm">
-	   <div class="card-header mb-2 bg-info">
+	   <div class="card-header mb-2 bg-body">
 		<strong>{{ item.nombre | upcase }}</strong>
 	   </div>
 		<div class="card-body">  		
