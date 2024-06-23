@@ -20,7 +20,10 @@
 	<script src="{{ '/assets/plugin/jquery.magnify-mobile.js' | relative_url }}"></script>
 	<script>
 		$(document).ready(function () {
-			$('.zoom').magnify();
+			$('.zoom').magnify({
+				magnifiedWidth: 1200,
+				magnifiedHeight: 1200
+			});
 		});
 	</script>
 	<!-- Bootstrap 5 js -->
