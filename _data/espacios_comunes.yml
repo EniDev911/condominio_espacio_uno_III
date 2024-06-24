@@ -9,3 +9,9 @@
   text: "Destinado para grupos reducidos de personas"
   url: /espacios-comunes/piscina
   img: /assets/piscina.jpg
+
+- title: Estacionamientos
+  icon: "fa-solid fa-house-chimney"
+  text: "Plano de estacionamiento"
+  url: /espacios-comunes/estacionamientos
+  img: /assets/imgs/espacios-comunes/estacionamiento.jpg

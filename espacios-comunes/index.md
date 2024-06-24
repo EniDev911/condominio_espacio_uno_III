@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Espacios comunes
 banner: true
 bannerimg: /assets/espacios_comunes.png
