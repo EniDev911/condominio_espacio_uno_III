@@ -11,7 +11,7 @@ img_path: /assets/imgs/planos/
 		<div class="d-flex flex-wrap gap-3 mb-5">
 			<a href="javascript:void(0)" class="btn btn-info" data-href="{{ page.img_path | relative_url | append: 'plano-estacionamientos.png'}}" data-title="Plano estacionamientos">Estacionamientos</a>
 			<a href="javascript:void(0)" class="btn btn-success" data-href="{{ page.img_path | relative_url | append: 'zona-de-seguridad.png'}}" data-title="Plan de emergencia">Zona de Seguridad</a>
-			<a href="javascript:void(0)" class="btn btn-warning" data-href="{{ page.img_path | relative_url | append: 'llave-de-paso-gas.png'}}" data-title="Zona de LLaves de Gas" data-width="2600" data-height="2600">LLaves de paso de Gas</a>
+			<a href="javascript:void(0)" class="btn btn-warning" data-href="{{ page.img_path | relative_url | append: 'llave-de-paso-gas.png'}}" data-title="Zona de LLaves de Gas" data-width="2800" data-height="2800">LLaves de paso de Gas</a>
 		</div>
 	</div>
 	<div class="col-12 col-md-7 position-relative">
