@@ -19,11 +19,19 @@
 	<script src="{{ '/assets/plugin/jquery.magnify.js' | relative_url }}"></script>
 	<script src="{{ '/assets/plugin/jquery.magnify-mobile.js' | relative_url }}"></script>
 	<script>
+		const configZoom = {
+			magnifiedWidth: 1700,
+			magnifiedHeight: 1700,
+			touchBottomOffset: 90
+		}
+		function switchPic(src) {
+			const img = $('.zoom')
+			img.attr("src", src);
+			img.attr("data-magnify-src", src);
+			img.magnify(configZoom)
+		}
 		$(document).ready(function () {
-			$('.zoom').magnify({
-				magnifiedWidth: 1700,
-				magnifiedHeight: 1700
-			});
+			$('.zoom').magnify(configZoom);
 		});
 	</script>
 	<!-- Bootstrap 5 js -->
