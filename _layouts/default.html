@@ -24,11 +24,14 @@
 			magnifiedHeight: 1700,
 			touchBottomOffset: 90
 		}
-		function switchPic(src) {
+		function switchPic(src, width=1700, height=1700) {
 			const img = $('.zoom')
 			img.attr("src", src);
 			img.attr("data-magnify-src", src);
-			img.magnify(configZoom)
+			img.magnify({
+				magnifiedWidth: width,
+				magnifiedHeight: height,
+			})
 		}
 		$(document).ready(function () {
 			$('.zoom').magnify(configZoom);
