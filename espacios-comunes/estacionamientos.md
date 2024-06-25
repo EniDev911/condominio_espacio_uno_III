@@ -9,8 +9,8 @@ img_path: /assets/imgs/planos/
 <div class="row my-5 gap-3 align-items-top justify-content-center">
 	<div class="col-12 col-md-3">
 		<div class="d-flex flex-wrap gap-3 mb-5">
-			<a href="javascript:void(0)" class="btn btn-warning" data-href="{{ page.img_path | relative_url | append: 'plano-estacionamientos.png'}}">Estacionamientos</a>
-			<a href="javascript:void(0)" class="btn btn-success" data-href="{{ page.img_path | relative_url | append: 'zona-de-seguridad.png'}}">Zona de Seguridad</a>
+			<a href="javascript:void(0)" class="btn btn-warning" data-href="{{ page.img_path | relative_url | append: 'plano-estacionamientos.png'}}" data-title="Plano estacionamientos">Estacionamientos</a>
+			<a href="javascript:void(0)" class="btn btn-success" data-href="{{ page.img_path | relative_url | append: 'zona-de-seguridad.png'}}" data-title="Plan de emergencia">Zona de Seguridad</a>
 		</div>
 	</div>
 	<div class="col-12 col-md-8 position-relative">
@@ -26,12 +26,12 @@ window.onload = function() {
   }, false);
 
  	const img = document.querySelector("#original");
+ 	const h3 = document.querySelector("h3");
 
 	document.querySelectorAll("a.btn")
 	.forEach((item) => {
 		item.addEventListener('click', (event) => {
-			// img.setAttribute("data-magnify-src", event.target.dataset.href);
-			// img.src = event.target.dataset.href;
+			h3.textContent = event.target.dataset.title;
 			switchPic(event.target.dataset.href);
 		})
 	})
