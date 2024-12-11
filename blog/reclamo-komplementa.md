@@ -27,7 +27,7 @@ Una de las principales preocupaciones ha sido el uso inadecuado de los recursos 
 
 El mantenimiento adecuado de las áreas comunes es una de las responsabilidades más importantes de una empresa de administración de condominios. Sin embargo, pueden ustedes mismo haber notado lo maltratado que se encuentra el condominio:
 
-- **Espacios comunes descuidados**: A menudo, áreas importantes como jardines, pasillos, y zonas recreativas han sido ignorados y no reciben el cuidado necesario. Esto no solo afecta la estética del lugar, sino que también demuestra que no llevan a cabo las acciones necesarias que son de su compotencia.
+- **Espacios comunes descuidados**: A menudo, áreas importantes como jardines, pasillos, y zonas recreativas han sido ignorados y no reciben el cuidado necesario. Esto no solo afecta la estética del lugar, sino que también demuestra que no llevan a cabo las acciones necesarias que son de su competencia.
   
 - **Equipos obsoletos y sin mantenimiento**: Los equipos del condominio, como sistemas de iluminación, ausencia del segundo monitor de las camaras de la conserjería. A pesar de las solicitudes reiteradas por parte del personal de seguridad, no se han llevado a cabo reparaciones adecuadas ni se han reemplazado los equipos dañados.
 
