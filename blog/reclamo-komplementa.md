@@ -31,26 +31,30 @@ El mantenimiento adecuado de las áreas comunes es una de las responsabilidades 
   
 - **Equipos obsoletos y sin mantenimiento**: Los equipos del condominio, como sistemas de iluminación, ausencia del segundo monitor de las camaras de la conserjería. A pesar de las solicitudes reiteradas por parte del personal de seguridad, no se han llevado a cabo reparaciones adecuadas ni se han reemplazado los equipos dañados.
 
-### **2. Incumplimiento de pagos a trabajadores**
+### **3. Incumplimiento de pagos a trabajadores**
 
 Es importante añadir que el mal manejo no se limita solo a los aspectos administrativos, sino que también afecta directamente a los derechos de los trabajadores. Un caso alarmante ha sido el incumplimiento de los pagos correspondientes.
 
-- **Bono de mantención no pagado**: Desde que asumió komplementa como administración desde el día 1, el [Sr. **Hernan Fuentes**](https://registroadministradordeedificios.cl/administradores/komplementa/){: target='_blank' } a buscado a toda costa la reducción del sueldo y disipación de nuestros bonos cuestionando los valores que se asignan a nuestros derechos adquiridos con la falsa promesa que con esto van a disminuir los gastos comunes.
+- **Bono de mantención no pagado**: Desde que asumió komplementa como administración desde el día 1, el [Sr. **Hernan Fuentes**](https://registroadministradordeedificios.cl/administradores/komplementa/){: target='_blank' } gerente general de komplementa ha buscado a toda costa la reducción del sueldo de los trabajadores y disipación de nuestros bonos, cuestionando los valores que se asignan a nuestros derechos adquiridos con la **falsa promesa que con eso van a disminuir los gastos comunes**.
 
-En un episodio reciente, se evidenció un comportamiento aún más preocupante por parte del administrador [Sr **Emerson Castillo**](https://www.linkedin.com/in/emerson-castillo-287016325?originalSubdomain=cl) de **Komplementa**. A pesar de la clara irregularidad en los pagos, al querer hacer valer mis derechos a través de la comunicación en el grupo de whatsapp, en ese momento me escribe por interno y me trata de prepotente por reclamar lo que me corresponde, al ver que no se podía llegar a ninguna solución me veo en la obligación de abandonar el grupo. Esto sin embargo, en lugar de tratar de llegar a una solución, el "**administrador**" envió un audio **pidiendo que el trabajador no sea reingresado al grupo**. Este acto de aislar al trabajador no solo es inaceptable e injusto, sino que también pone en evidencia la falta de profesionalismo de quien está a cargo de la administración.
+En un episodio reciente, se evidenció un comportamiento aún más preocupante por parte del administrador [Sr **Emerson Castillo**](https://www.linkedin.com/in/emerson-castillo-287016325?originalSubdomain=cl){: target='_blank' } administrador de **Komplementa** y administrador asignado al condominio. A pesar de la clara irregularidad en los pagos, al querer hacer valer mis derechos a través de la comunicación en el grupo de whatsapp, en ese momento me escribe por interno y me trata de prepotente por reclamar lo que me corresponde, al ver que no se podía llegar a ninguna solución porque su respuesta fue que la "**ejecutiva no trabaja el fin de semana**" o sea desligándose de responsabilidad y dejandome todo el fin de semana con mi sueldo incompleto con un faltante de más de $**65.000** pesos, me veo en la obligación de abandonar el grupo. Esto sin embargo, en lugar de tratar de llegar a una solución, el "**administrador**" envió un audio **pidiendo que el trabajador no sea reingresado al grupo**. Este acto de aislar al trabajador no solo es inaceptable e injusto, sino que también pone en evidencia la falta de profesionalismo de quien está a cargo de la administración.
 
 Escuchen ustedes mismos lo que el **profesional de komplementa** les dice al resto de trabajadores:
 
+<div class="d-flex align-items-center">
 <audio controls>
     <source src="/assets/audios/emerson1.mp3" type="audio/mp3">
     Tu navegador no soporta la etiqueta de audio.
 </audio>
+<img src="/assets/imgs/komplementa/emerson.jpg" alt="emerson" height="80" class="ms-2 rounded-circle"><br>
+</div>
+<em>Audio enviado por el <strong>Sr. Emerson Castillo Administrador de Komplementa</strong></em>
 
-Es horrible la respuesta por parte de un "**profesional**", a quien se le ocurre decir '**la ejecutiva puede haberse equivocado**' es **LO NORMAL**, o sea lo normal es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo.
+Es horrible la respuesta por parte de un "**profesional**", a quien se le ocurre decir '**la ejecutiva puede haberse equivocado**' es **LO NORMAL**, o sea lo "**NORMAL**" es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo. En cuanto a lo sucedido con mi última liquidación me llama una persona el día lunes **02 de diciembre** de komplementa "**no era una ejecutiva**" era un tipo que decía ser de finanzas de la empresa komplementa y me confirma que efectivamente había un error en la liquidación y de lo que me correspondía me lo iban a depositar durante el día, cosa que fue durante la tarde cuando percibo un deposito en mi cuenta de $**48.293** que no se corresponde con lo que faltaba en la liquidación.
 
-<div class="alert alert-warning">PD: Claro, tuve que meter la presión porque sino también  me lo robas</div>
+<div class="alert alert-warning">PD: Claro, que tuve que meter la presión al exigir lo que me corresponde porque sino también  me lo robas</div>
 
-### **3. Problemas con la gestión de la seguridad**
+### **4. Problemas con la gestión de la seguridad**
 
 La seguridad es una de las principales prioridades en cualquier condominio, pero con esta **empresa innovadora**, tenemos la guinda de la torta bajo la administración de Komplementa.
 
@@ -62,33 +66,52 @@ Antes de la llegada de Komplementa, el condominio contaba con **un sistema organ
 
 Para ilustrar mejor la situación, tomemos un ejemplo concreto de cómo era el sistema de registros antes de la llegada de Komplementa
 
-<h3 align="center">Antes (Sistema digitalizado):</h3>
+<h3 align="center">Antes (Sistema digitalizado con la Administración anterior):</h3>
 
-<div align="center">
-<img src="/assets/imgs/komplementa/ficha-buena.png" alt="img - fichas malas" class="w-75"><br>
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-9 mx-auto">
+<img src="/assets/imgs/komplementa/ficha-buena.png" alt="img - fichas buenas" class="border"><br>
+</div>
+</div>
 </div>
 
-<h3 align="center">Resultado ficha residente</h3>
+<h3 align="center" class="my-3">Resultado ficha digital residente (Administración anterior)</h3>
 
-Una vez se generaba correctamente una ficha llegaba a nuestra bandeja de entrada en el correo electrónico y sabíamos entonces las personas que llegarían de antemano, les comparto una ficha real de residente obtenida desde el correo electrónico. Vea usted mismo el documento que nos llegaba:
+Con el sistema que trabajabamos con la administración anterior una vez se generaba correctamente una ficha llegaba a nuestra bandeja de entrada en el correo electrónico y sabíamos entonces las personas que llegarían de antemano, les comparto una ficha real de residente obtenida desde el correo electrónico. Vea usted mismo el documento que nos llegaba:
 
-{% include visor_pdf.html
-	title='normas'
-	pdf='/assets/pdfs/12_03_2024_DPTO. B 502.pdf'
-%}
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-9 mx-auto">
+<img src="/assets/imgs/komplementa/ficha-buena2.png" alt="img - fichas buena" class="border"><br>
+</div>
+</div>
+</div>
 
 ---
 
 <h3 align="center">Después (Sistema en papel de Komplementa):</h3>
 
-<div class="d-flex">
-<img src="/assets/imgs/komplementa/fichas-malas.png" alt="img - fichas malas" class="w-75">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-6 mx-auto mb-3 mb-lg-0">
+  <img src="/assets/imgs/komplementa/fichas-malas.png" alt="img - fichas malas">
+</div>
+<div class="col-11 col-lg-6">
+<h4>¿Qué podemos esperar de esta administración?:</h4>
 <ul class="list-style">
   <li>¿Cuándo llegó y cuándo se va?</li>
   <li>¿Dónde está la información del propietario?</li>  
   <li>¿Dónde está la firma del propietario?</li>
-  <li>Este documento no tiene pinta de pertenecer al condominio o a komplementa ni siquiera posee un logo</li>
+  <li>Este documento no tiene pinta de pertenecer al condominio o a komplementa ni siquiera posee un logo.</li>
+  <li>Usar fichas de registro en papel refleja una falta de modernización en la administración del condominio.</li>
+  <li>Un anillado y unas fotocopias no justifican más allá de $5.000 pesos.</li>
+  <li>El uso constante de papel contribuye a la deforestación y al aumento de los residuos. En un mundo cada vez más consciente de la sostenibilidad, seguir utilizando papel no es una práctica responsable.</li>
+  <li>En una situación de emergencia, cuando es crucial tener acceso rápido a la información de personas dentro del condominio, una ficha de papel es una barrera, especialmente si está desordenada como se ve en la <strong>captura adjunta</strong> y no actualizada correctamente.</li>
+  <li>Las fichas en papel son vulnerables a pérdidas, extravíos, o daños y la mala ortografía.</li>
 </ul>
+</div>
+</div>
 </div>
 
 ---
@@ -97,9 +120,17 @@ Una vez se generaba correctamente una ficha llegaba a nuestra bandeja de entrada
 
 Es fundamental que todos nosotros tanto trabajadores y comunidad reflexionemos sobre los problemas actuales y actuemos de manera unificada para exigir que Komplementa cumpla con sus responsabilidades de forma transparente. No solo se trata de asegurar que los recursos sean bien administrados, sino también de garantizar que nuestra relación laboral con el condominio vuelva a ser respetuosa y justa.
 
-En este sentido, invito a todos los vecinos a mantenerse informados, a participar activamente en las reuniones y a expresar sus opiniones con todo el derecho y sobre todo con toda la información que le estoy dando. Es esencial que trabajemos juntos para exigir una mejor explicaciones, transparencia y compromiso por parte de la administración del condominio.
+En este sentido, invito a todos los vecinos a mantenerse informados, a participar activamente en las reuniones y a expresar sus opiniones con todo el derecho y sobre todo con toda la información que le estoy dando. Es esencial que trabajemos juntos para exigir explicaciones, transparencia y compromiso por parte de la administración del condominio.
 
-Agradecer a todos los que forman parte de esta comunidad, por su comprensión y espero que ahora puedan estar más informado sobre las irregularidades que están sucediendo con los trabajadores.
+Agradecer a todos los que forman parte de esta comunidad, por su comprensión y espero que ahora puedan estar más informado **sobre las irregularidades que están sucediendo** con **los trabajadores** y **los recursos** para las actividades del condominio por parte de la empresa komplementa.
 
-Atentamente,  
-**Personal de Seguridad**  
+Atentamente,
+
+Marco Contreras Herrera.<br>
+**Personal de Seguridad**
+
+<img src="/assets/mi_firma.png" alt="firma" height="100" style="background: #fff">
+
+
+**Correo:**<br>
+contacto@mcherrera.dev
