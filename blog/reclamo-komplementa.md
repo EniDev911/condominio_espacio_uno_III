@@ -46,20 +46,11 @@ Escuchen ustedes mismos lo que el **profesional de komplementa** les dice al res
     Tu navegador no soporta la etiqueta de audio.
 </audio>
 
-Es horrible la respuesta que da como justificar lo injustificable, a quien se le ocurre decir 'la ejecutiva puede haberse equivocado' es **LO NORMAL**, o sea lo normal es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web**.
+Es horrible la respuesta por parte de un "**profesional**", a quien se le ocurre decir 'la ejecutiva puede haberse equivocado' es **LO NORMAL**, o sea lo normal es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo.
 
-<div class="alert alert-warning">Claro, tuve que meter la presión porque sino también me lo robas</div>
+<div class="alert alert-warning">PD: Claro, tuve que meter la presión porque sino también  me lo robas</div>
 
-
-### **3. Comunicación deficiente con los residentes**
-
-Otro de los problemas recurrentes que hemos identificado es la **falta de comunicación efectiva** entre Komplementa y la comunidad:
-
-- **Ausencia de informes y actualizaciones**: No hemos recibido actualizaciones periódicas sobre el estado de las finanzas del condominio, el progreso de los proyectos o las decisiones que afectan a la comunidad. Es esencial que como comunidad estemos informados sobre cómo se gestionan nuestros recursos y qué decisiones se toman en nuestra representación.
-  
-- **Falta de transparencia en la toma de decisiones**: Las decisiones importantes, como las que afectan a la seguridad o al presupuesto del condominio, se toman sin la debida consulta a los residentes. La falta de participación activa de la comunidad genera desconfianza y contribuye a una sensación de desconexión entre los administradores y los vecinos.
-
-### **4. Problemas con la gestión de la seguridad**
+### **3. Problemas con la gestión de la seguridad**
 
 La seguridad es una de las principales prioridades en cualquier condominio, pero con esta **empresa innovadora**, tenemos la guinda de la torta bajo la administración de Komplementa.
 
