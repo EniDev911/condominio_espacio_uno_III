@@ -37,7 +37,7 @@ Es importante añadir que el mal manejo no se limita solo a los aspectos adminis
 
 - **Bono de mantención no pagado**: Desde que asumió komplementa como administración desde el día 1, el [Sr. **Hernan Fuentes**](https://registroadministradordeedificios.cl/administradores/komplementa/){: target='_blank' } a buscado a toda costa la reducción del sueldo y disipación de nuestros bonos cuestionando los valores que se asignan a nuestros derechos adquiridos con la falsa promesa que con esto van a disminuir los gastos comunes.
 
-En un episodio reciente, se evidenció un comportamiento aún más preocupante por parte del administrador [Sr **Emerson Castillo**](https://www.linkedin.com/in/emerson-castillo-287016325?originalSubdomain=cl) de **Komplementa**. A pesar de la clara irregularidad en los pagos, al querer hacer valer mis derechos a través de la comunicación en el grupo de whatsapp, en ese momento me escribe por interno y me trata de prepotente por reclamar lo que me corresponde, al ver que no se podía llegar a ninguna solución me veo en la obligación de abandonar el grupo. Esto sin embargo, en lugar de tratar de llegar a una solución, el "**administrador**" envió un audio **pidiendo que el trabajador no sea reingresado al grupo**. Este acto de aislar al trabajador no solo es inaceptable e injusto, sino que también pone en evidencia la falta de profesionalismo de quien está a cargo de la administració.
+En un episodio reciente, se evidenció un comportamiento aún más preocupante por parte del administrador [Sr **Emerson Castillo**](https://www.linkedin.com/in/emerson-castillo-287016325?originalSubdomain=cl) de **Komplementa**. A pesar de la clara irregularidad en los pagos, al querer hacer valer mis derechos a través de la comunicación en el grupo de whatsapp, en ese momento me escribe por interno y me trata de prepotente por reclamar lo que me corresponde, al ver que no se podía llegar a ninguna solución me veo en la obligación de abandonar el grupo. Esto sin embargo, en lugar de tratar de llegar a una solución, el "**administrador**" envió un audio **pidiendo que el trabajador no sea reingresado al grupo**. Este acto de aislar al trabajador no solo es inaceptable e injusto, sino que también pone en evidencia la falta de profesionalismo de quien está a cargo de la administración.
 
 Escuchen ustedes mismos lo que el **profesional de komplementa** les dice al resto de trabajadores:
 
@@ -46,7 +46,7 @@ Escuchen ustedes mismos lo que el **profesional de komplementa** les dice al res
     Tu navegador no soporta la etiqueta de audio.
 </audio>
 
-Es horrible la respuesta por parte de un "**profesional**", a quien se le ocurre decir 'la ejecutiva puede haberse equivocado' es **LO NORMAL**, o sea lo normal es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo.
+Es horrible la respuesta por parte de un "**profesional**", a quien se le ocurre decir '**la ejecutiva puede haberse equivocado**' es **LO NORMAL**, o sea lo normal es que los pagos sean incompletos, a mi a la fecha me deben más de $120.000 pesos en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo.
 
 <div class="alert alert-warning">PD: Claro, tuve que meter la presión porque sino también  me lo robas</div>
 
