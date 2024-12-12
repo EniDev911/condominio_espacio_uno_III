@@ -26,7 +26,7 @@ Una de las principales preocupaciones ha sido el uso inadecuado de los recursos 
 
 ### **2. Falta de mantenimiento en áreas comunes**
 
-El mantenimiento adecuado de las áreas comunes es una de las responsabilidades más importantes de una empresa de administración de condominios. Sin embargo, pueden ustedes mismo haber notado lo maltratado que se encuentra el condominio:
+El mantenimiento adecuado de las áreas comunes es una de las responsabilidades más importantes de una empresa de administración de condominios. Sin embargo, pueden ustedes mismo que viven en la comunidad o la visitan frecuentemente haber notado lo maltratado que se encuentra el condominio:
 
 - **Espacios comunes descuidados**: A menudo, áreas importantes como jardines, pasillos, y zonas recreativas han sido ignorados y no reciben el cuidado necesario. Esto no solo afecta la estética del lugar, sino que también demuestra que no llevan a cabo las acciones necesarias que son de su competencia.
   
