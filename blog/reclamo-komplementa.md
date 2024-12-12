@@ -14,7 +14,7 @@ bannerimg: /assets/anti-komplementa.png
 
 Me dirijo a ustedes como un trabajador más y con el fin de informarles y hacer un llamado de atención sobre algunas faltas graves y preocupaciones relacionadas con la gestión que la empresa **Komplementa** ha llevado a cabo desde que asumio la administración del condominio. Como trabajador y personal de seguridad, es esencial que todos sepan y comprendan el impacto que tiene una administración tan deficiente como la que estamos citando en este artículo.
 
-A lo largo de estos últimos meses, he notado una serie de acciones que me gustaría compartir con ustedes para que todos tengamos claridad sobre los problemas que tenemos para trabajar como corresponde y en las condiciones adecuadas.
+A lo largo de estos últimos meses, he notado una serie de acciones que me gustaría compartir con ustedes para que todos tengamos claridad sobre los problemas que tenemos para trabajar como corresponde y en armonía con las condiciones adecuadas (como solía ser).
 
 ### **1. Mal uso de los recursos del condominio**
 
