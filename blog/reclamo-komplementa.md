@@ -61,7 +61,7 @@ Es horrible la respuesta por parte de un "**profesional**".
 
 En cuanto a lo sucedido con mi última **liquidación del mes de noviembre** me llama una persona el día lunes **02 de diciembre** de komplementa "**no era una ejecutiva**" era un tipo que decía ser de finanzas de la empresa komplementa y me confirma que efectivamente había un error en la liquidación y de lo que me correspondía me lo iban a depositar durante el día, cosa que fue durante la tarde cuando percibo un deposito en mi cuenta de $**48.293** que no se corresponde con lo que faltaba en la liquidación.
 
-<div class="alert alert-warning">PD: Claro, que tuve que meter la presión al exigir lo que me corresponde porque sino también  me lo robas</div>
+<div class="alert alert-warning"><strong>PD</strong>: Claro, que tuve que meter la presionar al exigir lo que me corresponde porque sino sería permitir subir el nivel de sus malas prácticas en el manejo de fondos.</div>
 
 ### **4. Problemas con la gestión de la seguridad**
 
@@ -97,6 +97,8 @@ Con el sistema que trabajabamos con la administración anterior una vez se gener
 </div>
 </div>
 
+<div class="alert alert-info mt-3"><strong>NOTA:</strong> Cabe señalar que la Administración anterior revisaba rigurosamente los antecedentes de los residentes, poniendo al tanto al personal de dichos antecedentes para advertir a los propietarios sobre las circunstancias.</div>
+
 ---
 
 <h3 align="center">Después (Sistema en papel de Komplementa):</h3>
@@ -119,6 +121,19 @@ Con el sistema que trabajabamos con la administración anterior una vez se gener
   <li>En una situación de emergencia, cuando es crucial tener acceso rápido a la información de personas dentro del condominio, una ficha de papel es una barrera, especialmente si está desordenada como se ve en la <strong>captura adjunta</strong> y no actualizada correctamente.</li>
   <li>Las fichas en papel son vulnerables a pérdidas, extravíos, o daños y la mala ortografía.</li>
 </ul>
+</div>
+</div>
+</div>
+
+
+- **Sustitución inadecuada de personal de seguridad**: El reemplazo de los guardias de seguridad por motivos especiales a sido por personal que trae la empresa komplementa sin la debida formación y vocación para desempeñar las labores lo que es otro factor que incrementa la vulnerabilidad del condominio, especialmente si se trata de la seguridad de las personas y sus bienes.
+
+Vean ustedes mismo el personal que traen para reemplazar el **turno de noche**:
+
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-9 mx-auto">
+<img src="/assets/imgs/komplementa/guardia-komplementa.jpeg" alt="img - guardia komplementa" class="border rounded"><br>
 </div>
 </div>
 </div>
