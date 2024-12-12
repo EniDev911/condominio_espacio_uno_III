@@ -32,6 +32,59 @@ El mantenimiento adecuado de las áreas comunes es una de las responsabilidades 
   
 - **Equipos obsoletos y sin mantenimiento**: Los equipos del condominio, como sistemas de iluminación, ausencia del segundo monitor de las camaras de la conserjería. A pesar de las solicitudes reiteradas por parte del personal de seguridad, no se han llevado a cabo reparaciones adecuadas ni se han reemplazado los equipos dañados.
 
+Invito a todos los residentes y a la comunidad a ver el impacto de estos cambios a través de una galería de imágenes (prueba de que una imagen vale más que mil palabras) que muestra el antes y el después de la administración del condominio, para que todos podamos reflexionar sobre la importancia de mantener estándares de calidad en el condominio.
+
+<h3 align="center">Antes (Administración anterior):</h3>
+
+<div class="container">
+<div class="row g-2">
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/noche-1.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio bien iluminado</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/noche-2.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio bien iluminado</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/noche-3.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio bien iluminado</figcaption>
+</div>
+</div>
+</div>
+
+<h3 align="center">Después (con Administración Komplementa)</h3>
+
+<div class="container">
+<div class="row g-2">
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-noche-1.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio poco iluminado</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-noche-2.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio poco iluminado</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-noche-3.jpg" alt="img - noche" class="rounded">
+<figcaption>Condominio bien iluminado</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-rejas-oxidadas.jpeg" alt="img" class="rounded" height="280" width="100%">
+<figcaption>Rejas Oxidadas y escombros tirados</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="280" width="100%" style="object-fit: cover">
+<figcaption>Letrero torre A  (pésimas condiciones)</figcaption>
+</div>
+<div class="col-12 col-md-6 col-lg-4 text-center">
+<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="280" width="100%" style="object-fit: cover">
+<figcaption>Letrero torre C  (pésimas condiciones)</figcaption>
+</div>
+</div>
+</div>
+
+
 ### **3. Incumplimiento de pagos a trabajadores**
 
 Es importante añadir que el mal manejo no se limita solo a los aspectos administrativos, sino que también afecta directamente a los derechos de los trabajadores. Un caso alarmante ha sido el incumplimiento de los pagos correspondientes.
@@ -57,7 +110,6 @@ Escuchen ustedes mismos lo que el **profesional de komplementa** les dice al res
 - El cuando dice '**la ejecutiva puede haber cometido un error**' es **LO NORMAL**, o sea el quiere **normalizar** esta conducta porque para ellos lo "**NORMAL**" es que **los pagos sean incompletos**, a mi a la fecha me deben más de $**120.000** pesos (quizás no sea una gran cantidad para muchos, pero es mío y recordar que la empresa komplementa no sólo administra este condominio) en lo que respecta al bono que me corresponde por **mantención de esta web** por lo que ya se activó un plan de fiscalización en la inspección del trabajo.
 - De la nada menciona a un miembro del comité que no está relacionado con el asunto de los pagos y la forma en que lo menciona es algo informal y con intereses personales, como si el administrador estuviera intentando incluirlo en la conversación sin ningún fundamento y admitiendo que tiene problemas personales (y lo dice en el grupo de los trabajadores).
 Es horrible la respuesta por parte de un "**profesional**".
-
 
 En cuanto a lo sucedido con mi última **liquidación del mes de noviembre** me llama una persona el día lunes **02 de diciembre** de komplementa "**no era una ejecutiva**" era un tipo que decía ser de finanzas de la empresa komplementa y me confirma que efectivamente había un error en la liquidación y de lo que me correspondía me lo iban a depositar durante el día, cosa que fue durante la tarde cuando percibo un deposito en mi cuenta de $**48.293** que no se corresponde con lo que faltaba en la liquidación.
 
@@ -128,7 +180,7 @@ Con el sistema que trabajabamos con la administración anterior una vez se gener
 
 - **Sustitución inadecuada de personal de seguridad**: El reemplazo de los guardias de seguridad por motivos especiales a sido por personal que trae la empresa komplementa sin la debida formación y vocación para desempeñar las labores lo que es otro factor que incrementa la vulnerabilidad del condominio, especialmente si se trata de la seguridad de las personas y sus bienes.
 
-Vean ustedes mismo el personal que traen para reemplazar el **turno de noche**:
+Vean ustedes mismo el personal que traen para reemplazar el **turno de noche** la empresa komplementa:
 
 <div class="container">
 <div class="row">
