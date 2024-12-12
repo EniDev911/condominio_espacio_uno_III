@@ -169,8 +169,8 @@ Con el sistema que trabajabamos con la administración anterior una vez se gener
 
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-6 mx-auto mb-3 mb-lg-0">
-  <img src="/assets/imgs/komplementa/fichas-malas.png" alt="img - fichas malas">
+<div class="col-12 col-lg-6 mx-auto mb-3 mb-lg-0" style="border: 1px solid red">
+  <img src="/assets/imgs/komplementa/fichas-malas.png" alt="img - fichas malas" height="100%" style="object-fit: cover">
 </div>
 <div class="col-11 col-lg-6">
 <h4>¿Qué podemos esperar de esta administración?:</h4>
