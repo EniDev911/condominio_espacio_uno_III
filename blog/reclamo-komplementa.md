@@ -67,7 +67,7 @@ Invito a todos los residentes y a la comunidad a ver el impacto de estos cambios
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
 <img src="/assets/imgs/condominio/komplementa-noche-3.jpg" alt="img - noche" class="rounded">
-<figcaption>Condominio bien iluminado</figcaption>
+<figcaption>Condominio poco iluminado</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
 <img src="/assets/imgs/condominio/komplementa-rejas-oxidadas.jpeg" alt="img" class="rounded" height="280" width="100%">
