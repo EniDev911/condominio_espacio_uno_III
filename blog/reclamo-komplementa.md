@@ -10,7 +10,7 @@ bannerimg: /assets/anti-komplementa.png
 
 ## **Reflexión sobre el mal manejo y abuso por parte de Komplementa**
 
-**Estimados vecinos**,
+<strong class="fs-4">Estimados vecinos</strong>,
 
 Me dirijo a ustedes como un trabajador más y con el fin de informarles y hacer un llamado de atención sobre algunas faltas graves y preocupaciones relacionadas con la gestión que la empresa **Komplementa** ha llevado a cabo desde que asumio la administración del condominio. Como trabajador y personal de seguridad, es esencial que todos sepan y comprendan el impacto que tiene una administración tan deficiente como la que estamos citando en este artículo.
 
