@@ -113,7 +113,7 @@ Es horrible la respuesta por parte de un "**profesional**".
 
 En cuanto a lo sucedido con mi última **liquidación del mes de noviembre** me llama una persona el día lunes **02 de diciembre** de komplementa "**no era una ejecutiva**" era un tipo que decía ser de finanzas de la empresa komplementa y me confirma que efectivamente había un error en la liquidación y de lo que me correspondía me lo iban a depositar durante el día, cosa que fue durante la tarde cuando percibo un deposito en mi cuenta de $**48.293** que no se corresponde con lo que faltaba en la liquidación.
 
-<div class="alert alert-warning"><strong>PD</strong>: Claro, que tuve que meter la presionar al exigir lo que me corresponde porque sino sería permitir subir el nivel de sus malas prácticas en el manejo de fondos.</div>
+<div class="alert alert-warning"><strong>PD</strong>: Claro, que tuve que presionar y exigir lo que me corresponde porque sino sería permitir subir el nivel de sus malas prácticas en el manejo de fondos.</div>
 
 ### **4. Problemas con la gestión de la seguridad**
 
