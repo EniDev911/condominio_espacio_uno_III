@@ -51,15 +51,15 @@ Invito a todos los residentes y a la comunidad a ver el impacto de estos cambios
 <figcaption>Condominio bien iluminado</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/jardin-bien-cuidado1.jpeg" alt="img - noche" class="rounded" height="260" width="100%">
+<img src="/assets/imgs/condominio/jardin-bien-cuidado1.jpeg" alt="img - noche" class="rounded" height="240" width="100%" style="object-fit: cover">
 <figcaption>El cuidado de las áreas verdes</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/instalacion-pasto.jpeg" alt="img - noche" class="rounded" height="260" width="100%">
+<img src="/assets/imgs/condominio/instalacion-pasto.jpeg" alt="img - noche" class="rounded" height="240" width="100%" style="object-fit: cover">
 <figcaption>Instalación pasto</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/mejoras-en-areas-comunes.jpeg" alt="img - noche" class="rounded" height="260" width="100%">
+<img src="/assets/imgs/condominio/mejoras-en-areas-comunes.jpeg" alt="img - noche" class="rounded" height="240" width="100%" style="object-fit: cover">
 <figcaption>Instalación Hamacas en verano (confort)</figcaption>
 </div>
 </div>
@@ -82,15 +82,15 @@ Invito a todos los residentes y a la comunidad a ver el impacto de estos cambios
 <figcaption>Condominio poco iluminado</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/komplementa-rejas-oxidadas.jpeg" alt="img" class="rounded" height="260" width="100%">
+<img src="/assets/imgs/condominio/komplementa-rejas-oxidadas.jpeg" alt="img" class="rounded" height="240" width="100%">
 <figcaption>Rejas Oxidadas y escombros tirados</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="260" width="100%" style="object-fit: cover">
+<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="240" width="100%" style="object-fit: cover">
 <figcaption>Letrero torre A  (pésimas condiciones)</figcaption>
 </div>
 <div class="col-12 col-md-6 col-lg-4 text-center">
-<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="260" width="100%" style="object-fit: cover">
+<img src="/assets/imgs/condominio/komplementa-letrero-torre-a.jpg" alt="img" class="rounded" height="240" width="100%" style="object-fit: cover">
 <figcaption>Letrero torre C  (pésimas condiciones)</figcaption>
 </div>
 </div>
