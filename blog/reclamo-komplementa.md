@@ -55,7 +55,7 @@ Invito a todos los residentes y a la comunidad a ver el impacto de estos cambios
 
 <h3 align="center">Después (con Administración Komplementa)</h3>
 
-<div class="container mb-3">
+<div class="container mb-4">
 <div class="row g-2">
 <div class="col-12 col-md-6 col-lg-4 text-center">
 <img src="/assets/imgs/condominio/komplementa-noche-1.jpg" alt="img - noche" class="rounded">
